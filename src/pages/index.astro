@@ -24,9 +24,32 @@ import '../styles/global.css';
 			
 			<div class="flex flex-wrap justify-start gap-4 mt-12 md:mt-16">
 				<a href="#smart-yatra" class="border border-white rounded-full px-6 py-2 text-xs md:text-sm uppercase tracking-widest bg-transparent hover:bg-white hover:text-black transition-colors duration-300 font-['Inter']">Smart Yatra</a>
-				<a href="#visual-arts" class="border border-white rounded-full px-6 py-2 text-xs md:text-sm uppercase tracking-widest bg-transparent hover:bg-white hover:text-black transition-colors duration-300 font-['Inter']">Visual Arts</a>
+				<a href="#videography" class="border border-white rounded-full px-6 py-2 text-xs md:text-sm uppercase tracking-widest bg-transparent hover:bg-white hover:text-black transition-colors duration-300 font-['Inter']">Videography</a>
 				<a href="#canvas-meta" class="border border-white rounded-full px-6 py-2 text-xs md:text-sm uppercase tracking-widest bg-transparent hover:bg-white hover:text-black transition-colors duration-300 font-['Inter']">The Canvas</a>
 				<a href="#about" class="border border-white rounded-full px-6 py-2 text-xs md:text-sm uppercase tracking-widest bg-transparent hover:bg-white hover:text-black transition-colors duration-300 font-['Inter']">About / Connect</a>
+			</div>
+		</section>
+
+		<!-- 2. Navigation Hub -->
+		<section id="hub" class="w-full px-6 md:px-16 mt-[40vh] md:mt-[80vh] scroll-mt-[5vh] relative z-20">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-0 w-full max-w-6xl mx-auto font-['Bebas_Neue'] text-3xl md:text-5xl lg:text-6xl uppercase tracking-widest leading-none border border-white/20">
+				
+				<!-- Left Column -->
+				<a href="#smart-yatra" class="group block border-r-0 md:border-r border-b md:border-b-0 border-white/20 p-8 md:p-12 hover:bg-white hover:text-black transition-colors duration-300">
+					<div class="h-full flex flex-col justify-between min-h-[200px] transition-transform duration-300 group-hover:-translate-y-2 group-hover:translate-x-2">
+						<span class="text-xs md:text-sm font-['Inter'] tracking-[0.3em] opacity-70 group-hover:opacity-100 font-semibold mb-8 block">01 // Engineering</span>
+						<h3 class="mt-auto">PROGRAMMING &<br/>ARCHITECTURE</h3>
+					</div>
+				</a>
+
+				<!-- Right Column -->
+				<a href="#videography" class="group block p-8 md:p-12 hover:bg-white text-white hover:text-black transition-colors duration-300">
+					<div class="h-full flex flex-col justify-between min-h-[200px] transition-transform duration-300 group-hover:-translate-y-2 group-hover:translate-x-2">
+						<span class="text-xs md:text-sm font-['Inter'] tracking-[0.3em] opacity-70 group-hover:opacity-100 font-semibold mb-8 block">02 // Media</span>
+						<h3 class="mt-auto">CINEMATOGRAPHY &<br/>VFX</h3>
+					</div>
+				</a>
+
 			</div>
 		</section>
 
@@ -47,22 +70,46 @@ import '../styles/global.css';
 			</div>
 		</section>
 
-		<!-- 4. Case Study 2: Visual Storytelling (Right Aligned) -->
-		<section id="visual-arts" class="px-6 md:px-16 flex flex-col md:flex-row md:justify-end my-16 md:my-32">
-			<div class="max-w-4xl bg-black/40 mix-blend-screen border-r-2 border-white/20 p-6 md:p-12 text-right reveal">
-				<h2 class="font-['Bebas_Neue'] text-4xl md:text-8xl leading-none tracking-tight uppercase mb-8">
-					NARRATIVE DIRECTION /<br />VFX & EDITING
+		<!-- 4. Videography Gallery -->
+		<section id="videography" class="max-w-[1400px] w-full mx-auto px-6 md:px-16 my-16 md:my-32">
+			<div class="mb-12 border-l-2 border-white/20 pl-6 reveal">
+				<h2 class="font-['Bebas_Neue'] text-4xl md:text-7xl leading-none tracking-tight uppercase">
+					CINEMATOGRAPHY & VFX
 				</h2>
-				<div class="font-['Inter'] text-lg md:text-xl leading-relaxed space-y-6 font-light">
-					<p>
-						Technology is only half the equation; visual storytelling dictates the user experience. My digital editing workflow is defined by high-contrast aesthetics, beat-synchronization, and rigorous audience retention strategies across social platforms.
-					</p>
-					<p>
-						This narrative focus extends into 3D environments and live-action direction. From conceptualizing 'Whispers of Silence'—a character-driven animation modeled in Blender—to directing short films that explore complex social dynamics and emotional twists, I actively bridge the gap between technical execution and creative direction.
-					</p>
-					<video autoplay loop muted playsinline class="w-full h-auto mt-8 border border-white/20 grayscale hover:grayscale-0 transition-all duration-700 ease-in-out object-cover aspect-video">
-						<source src="/video/cinematography-reel.mp4" type="video/mp4" />
+				<p class="font-['Inter'] text-sm md:text-lg tracking-[0.3em] uppercase mt-4 text-white/70">
+					Sony Alpha Systems × DaVinci Resolve
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-4 reveal">
+				<!-- Cinematic Video Item 1 -->
+				<div class="relative group aspect-[16/9] md:aspect-[2.35/1] overflow-hidden border border-white/20 bg-neutral-900 cursor-pointer">
+					<video muted loop playsinline class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 ease-in-out scale-105 group-hover:scale-100" preload="none" onmouseover="this.play()" onmouseout="this.pause()">
+						<source src="https://videos.pexels.com/video-files/3163534/3163534-uhd_2560_1440_30fps.mp4" type="video/mp4" />
 					</video>
+					<div class="absolute bottom-4 left-4 font-['Inter'] text-xs font-semibold tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 mix-blend-difference pb-1 border-b border-white z-10 text-white">
+						Neon Dreams // 2025
+					</div>
+				</div>
+
+				<!-- Cinematic Video Item 2 -->
+				<div class="relative group aspect-[16/9] md:aspect-[2.35/1] overflow-hidden border border-white/20 bg-neutral-900 cursor-pointer">
+					<video muted loop playsinline class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 ease-in-out scale-105 group-hover:scale-100" preload="none" onmouseover="this.play()" onmouseout="this.pause()">
+						<source src="https://videos.pexels.com/video-files/5535560/5535560-uhd_2560_1440_30fps.mp4" type="video/mp4" />
+					</video>
+					<div class="absolute bottom-4 left-4 font-['Inter'] text-xs font-semibold tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 mix-blend-difference pb-1 border-b border-white z-10 text-white">
+						Urban Echoes // 2024
+					</div>
+				</div>
+
+				<!-- Cinematic Video Item 3 (Full Width) -->
+				<div class="relative group aspect-[16/9] md:aspect-[2.35/1] overflow-hidden border border-white/20 bg-neutral-900 cursor-pointer md:col-span-2">
+					<video muted loop playsinline class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 ease-in-out scale-105 group-hover:scale-100" preload="none" onmouseover="this.play()" onmouseout="this.pause()">
+						<source src="https://videos.pexels.com/video-files/2880024/2880024-uhd_2560_1440_24fps.mp4" type="video/mp4" />
+					</video>
+					<div class="absolute bottom-4 left-4 font-['Inter'] text-xs font-semibold tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 mix-blend-difference pb-1 border-b border-white z-10 text-white">
+						Whispers of Silence // Director's Cut
+					</div>
 				</div>
 			</div>
 		</section>
@@ -84,22 +131,99 @@ import '../styles/global.css';
 			</div>
 		</section>
 
-		<!-- 6. The About Section (Left Aligned) -->
-		<section id="about" class="px-6 md:px-16 max-w-4xl mt-16 md:mt-32 mb-[20vh]">
-			<div class="bg-black/40 mix-blend-screen border-l-2 border-white/20 p-6 md:p-12 reveal">
-				<h2 class="font-['Bebas_Neue'] text-4xl md:text-8xl leading-none tracking-tight uppercase mb-8">
-					THE ARCHITECT /<br/>CONNECT
-				</h2>
-				<div class="font-['Inter'] text-lg md:text-xl leading-relaxed space-y-6 font-light">
-					<p>
-						Currently engineering systems and directing visuals in Kerala, India. I am actively seeking roles and freelance opportunities where I can bridge the gap between heavy data architecture and high-end visual storytelling.
-					</p>
+		<!-- 6. The About Section (Terminal Aesthetic) -->
+		<section id="about" class="px-6 md:px-16 max-w-4xl w-full mx-auto mt-16 md:mt-32 mb-16 md:mb-32 reveal">
+			<div class="relative bg-[#050505] border border-white/10 rounded-sm overflow-hidden p-6 md:p-10 font-['JetBrains_Mono'] text-sm md:text-base leading-relaxed text-[#33ff33] shadow-[0_0_30px_rgba(51,255,51,0.03)] terminal-scanline">
+				
+				<!-- Header Bar -->
+				<div class="flex items-center gap-2 mb-8 border-b border-white/10 pb-4">
+					<div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+					<div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+					<div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+					<span class="ml-4 text-xs tracking-widest text-[#33ff33]/50 uppercase">guest@abikurian: ~</span>
 				</div>
-				<div class="flex flex-wrap gap-8 mt-10 font-['Bebas_Neue'] text-3xl md:text-4xl tracking-widest">
-					<a href="https://www.instagram.com/abii.aep/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-400 transition-colors">INSTAGRAM</a>
-					<a href="https://github.com/abikurian" target="_blank" rel="noopener noreferrer" class="hover:text-gray-400 transition-colors">GITHUB</a>
-					<a href="https://www.linkedin.com/in/abi-kurian-varghese/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-400 transition-colors">LINKEDIN</a>
-					<a href="mailto:abikurianvarghese@gmail.com" class="hover:text-gray-400 transition-colors">EMAIL</a>
+
+				<!-- Terminal Content -->
+				<div class="space-y-6">
+					<p class="flex items-center">
+						<span class="text-pink-500 mr-2">➜</span>
+						<span class="text-blue-400 mr-2">~</span>
+						<span class="text-white">whoami --profile</span>
+					</p>
+					
+					<div class="text-neutral-300 typing-anim-container pl-4 border-l border-white/10 py-2">
+						<p class="mb-2"><span class="text-[#33ff33]/50">USER:</span> <span class="text-white font-bold">Abi Kurian Varghese</span></p>
+						<p class="mb-2"><span class="text-[#33ff33]/50">ROLE_1:</span> Software Engineer (6th Sem KTU)</p>
+						<p class="mb-2"><span class="text-[#33ff33]/50">ROLE_2:</span> Professional Videographer</p>
+						<p class="mb-4 text-[#33ff33]/30 mt-4">---------------------------------------------------</p>
+						<p class="mb-2 text-[#33ff33] font-bold">SYNOPSIS :</p>
+						<p class="mb-1">> Bridging the gap between robust software architecture</p>
+						<p class="mb-1">> and high-fidelity cinematic storytelling.</p>
+						<p class="mb-1">> Whether constructing scalable backends or</p>
+						<p class="mb-1">> color-grading RAW mirrorless footage in DaVinci,</p>
+						<p class="mb-1">> the output remains uncompromising.</p>
+						<p class="mt-4 text-[#33ff33] font-bold terminal-cursor">_</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="flex flex-wrap gap-8 mt-12 font-['Bebas_Neue'] text-3xl md:text-4xl tracking-widest pl-4">
+				<a href="https://www.instagram.com/abii.aep/" target="_blank" rel="noopener noreferrer" class="hover:text-white text-neutral-500 transition-colors">INSTAGRAM</a>
+				<a href="https://github.com/abikurian" target="_blank" rel="noopener noreferrer" class="hover:text-white text-neutral-500 transition-colors">GITHUB</a>
+				<a href="https://www.linkedin.com/in/abi-kurian-varghese/" target="_blank" rel="noopener noreferrer" class="hover:text-white text-neutral-500 transition-colors">LINKEDIN</a>
+				<a href="mailto:abikurianvarghese@gmail.com" class="hover:text-white text-neutral-500 transition-colors">EMAIL</a>
+			</div>
+		</section>
+
+		<!-- 7. The Skills Board -->
+		<section class="max-w-[1400px] w-full mx-auto px-6 md:px-16 mt-16 md:mt-32 mb-[20vh] reveal">
+			<div class="mb-12 border-l-2 border-white/20 pl-6">
+				<h2 class="font-['Bebas_Neue'] text-4xl md:text-7xl leading-none tracking-tight uppercase">
+					SYSTEM CAPABILITIES
+				</h2>
+			</div>
+
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-l border-white/20 font-['Inter'] uppercase">
+				<!-- Category 1 -->
+				<div class="p-8 md:p-10 border-r border-b border-white/20 hover:bg-white hover:text-black transition-colors duration-300 group">
+					<h3 class="text-xs tracking-[0.3em] font-semibold mb-8 text-neutral-500 group-hover:text-neutral-800 border-b border-white/20 group-hover:border-black/20 pb-4 inline-block transition-colors duration-300">01 / Engineering</h3>
+					<ul class="space-y-4 text-sm md:text-base font-medium tracking-widest text-white/90 group-hover:text-black transition-colors duration-300">
+						<li>Flutter</li>
+						<li>Dart</li>
+						<li>Python</li>
+						<li>JavaScript</li>
+						<li>PHP</li>
+						<li>Java</li>
+					</ul>
+				</div>
+				<!-- Category 2 -->
+				<div class="p-8 md:p-10 border-r border-b border-white/20 hover:bg-white hover:text-black transition-colors duration-300 group">
+					<h3 class="text-xs tracking-[0.3em] font-semibold mb-8 text-neutral-500 group-hover:text-neutral-800 border-b border-white/20 group-hover:border-black/20 pb-4 inline-block transition-colors duration-300">02 / Backend/Cloud</h3>
+					<ul class="space-y-4 text-sm md:text-base font-medium tracking-widest text-white/90 group-hover:text-black transition-colors duration-300">
+						<li>Firebase (Firestore)</li>
+						<li>Firebase (Auth)</li>
+						<li>MongoDB</li>
+						<li>SQL</li>
+					</ul>
+				</div>
+				<!-- Category 3 -->
+				<div class="p-8 md:p-10 border-r border-b border-white/20 hover:bg-white hover:text-black transition-colors duration-300 group">
+					<h3 class="text-xs tracking-[0.3em] font-semibold mb-8 text-neutral-500 group-hover:text-neutral-800 border-b border-white/20 group-hover:border-black/20 pb-4 inline-block transition-colors duration-300">03 / Creative</h3>
+					<ul class="space-y-4 text-sm md:text-base font-medium tracking-widest text-white/90 group-hover:text-black transition-colors duration-300">
+						<li>Blender</li>
+						<li>DaVinci Resolve</li>
+						<li>Sony Alpha Workflow</li>
+					</ul>
+				</div>
+				<!-- Category 4 -->
+				<div class="p-8 md:p-10 border-r border-b border-white/20 hover:bg-white hover:text-black transition-colors duration-300 group">
+					<h3 class="text-xs tracking-[0.3em] font-semibold mb-8 text-neutral-500 group-hover:text-neutral-800 border-b border-white/20 group-hover:border-black/20 pb-4 inline-block transition-colors duration-300">04 / Tools</h3>
+					<ul class="space-y-4 text-sm md:text-base font-medium tracking-widest text-white/90 group-hover:text-black transition-colors duration-300">
+						<li>Git</li>
+						<li>Vercel</li>
+						<li>VS Code</li>
+						<li>Linux (Ollama/LLMs)</li>
+					</ul>
 				</div>
 			</div>
 		</section>

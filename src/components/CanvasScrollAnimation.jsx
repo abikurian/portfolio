@@ -62,8 +62,8 @@ export default function CanvasScrollAnimation() {
 
     const handleScroll = () => {
       const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-      // Faster mobile scrolling mapping (150vh mobile vs 200vh desktop)
-      const scrollDistance = window.innerWidth < 768 ? window.innerHeight * 1.5 : window.innerHeight * 2;
+      // Adjusted scroll pacing: animation completes earlier to allow "breathable" final state
+      const scrollDistance = window.innerWidth < 768 ? window.innerHeight * 0.7 : window.innerHeight * 1.0;
       const scrollFraction = Math.max(0, Math.min(1, scrollTop / scrollDistance));
 
       // Calculate target frame
