@@ -110,38 +110,36 @@ import "../styles/global.css";
 			</div>
 		</section>
 
-		<!-- Case Study 1: SpendStudent -->
+		<!-- Case Study 1: Local Workforce Portal -->
 		<section
-			id="spendstudent"
+			id="localworkforce"
 			class="px-6 md:px-16 max-w-4xl mt-[20vh] md:mt-[30vh] mb-16 md:mb-32 scroll-mt-[5vh]"
 		>
 			<div class="bg-black/40 border-l border-[#b3996b]/30 p-6 md:p-12">
 				<h2
 					class="font-['Bebas_Neue'] text-4xl md:text-8xl leading-none tracking-tight uppercase mb-8"
 				>
-					SPENDSTUDENT /<br />PROGRESSIVE WEB APP
+					LOCAL WORKFORCE /<br />RECRUITMENT PORTAL
 				</h2>
 				<div
 					class="font-['Inter'] text-lg md:text-xl leading-relaxed space-y-6 font-light"
 				>
 					<p>
-						Managing shared expenses across multiple devices usually
-						means relying on slow cloud queries that break offline.
-						I wanted a mobile-first finance tracker that bridged the
-						gap between blazing-fast local browser storage and
-						real-time cloud synchronization without sacrificing
-						security.
+						The event and hospitality industry relies heavily on informal,
+						fragmented channels for short-term staffing. To solve this,
+						I am architecting a centralized web and mobile-based
+						recruitment portal designed to digitize and streamline hiring
+						for catering companies, photography studios, and event
+						management teams.
 					</p>
 					<p>
-						I engineered a two-way sync engine using Dexie.js
-						(IndexedDB) for instant offline reads and Supabase
-						(PostgreSQL) as the cloud master. To prevent UI flashing
-						on boot, I wrote strict global loading guards that
-						resolve complex React race conditions before evaluating
-						local tables. Backed by strict Row Level Security (RLS),
-						the app guarantees cross-device parity across phones,
-						laptops, and incognito sessions while keeping user data
-						completely locked down.
+						Unlike traditional freelance platforms that rely on portfolios,
+						this system prioritizes worker reliability through verified job
+						completion histories, attendance records, and employer ratings.
+						The backend architecture incorporates strict role-based access
+						control (RBAC), secure authentication, and location-based job
+						discovery to create a highly efficient, transparent local
+						employment ecosystem.
 					</p>
 				</div>
 			</div>
@@ -196,31 +194,7 @@ import "../styles/global.css";
 				id="portfolio-grid"
 				class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-l border-white/10 font-['Inter'] uppercase"
 			>
-				<!-- Project 1: SMART YATRA -->
-				<div
-					data-category="mobile-os"
-					class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
-				>
-					<div>
-						<h3
-							class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
-						>
-							SMART YATRA
-						</h3>
-						<p
-							class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
-						>
-							A real-time, high-tech fleet management application built to track campus buses. Engineered a custom geolocation algorithm to dynamically optimize cloud sync frequency and battery usage.
-						</p>
-					</div>
-					<div
-						class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
-					>
-						DART // FLUTTER // FIREBASE
-					</div>
-				</div>
-
-				<!-- Project 2: LOCAL WORKFORCE RECRUITMENT PORTAL -->
+				<!-- Project 1: LOCAL WORKFORCE RECRUITMENT PORTAL -->
 				<div
 					data-category="full-stack"
 					class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
@@ -241,6 +215,30 @@ import "../styles/global.css";
 						class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
 					>
 						RESEARCH & SYSTEM ARCHITECTURE PHASE
+					</div>
+				</div>
+
+				<!-- Project 2: SMART YATRA -->
+				<div
+					data-category="mobile-os"
+					class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
+				>
+					<div>
+						<h3
+							class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
+						>
+							SMART YATRA
+						</h3>
+						<p
+							class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
+						>
+							A real-time, high-tech fleet management application built to track campus buses. Engineered a custom geolocation algorithm to dynamically optimize cloud sync frequency and battery usage.
+						</p>
+					</div>
+					<div
+						class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
+					>
+						DART // FLUTTER // FIREBASE
 					</div>
 				</div>
 
@@ -410,28 +408,6 @@ import "../styles/global.css";
 								class="font-['JetBrains_Mono'] text-xs text-white/60 mt-2 leading-relaxed"
 							>
 								Presented research on "Personalized Intelligent Job Recommendation Based on Deep Learning in Elasticsearch Environment," summarizing complex methodologies and preparing technical defense notes.
-							</p>
-						</div>
-
-						<!-- Media Team Head -->
-						<div class="relative">
-							<div
-								class="w-2.5 h-2.5 bg-white absolute -left-[31px] top-1.5 border border-black z-10 rounded-none"
-							>
-							</div>
-							<span
-								class="font-['JetBrains_Mono'] text-xs text-[#b3996b] tracking-wider block mb-1"
-								>2026</span
-							>
-							<h4
-								class="font-bold text-sm tracking-wide text-white uppercase font-['Inter']"
-							>
-								MEDIA TEAM HEAD - ONAM
-							</h4>
-							<p
-								class="font-['JetBrains_Mono'] text-xs text-white/60 mt-2 leading-relaxed"
-							>
-								Led the creative direction and video production for the college festival, seamlessly blending technical workflows with high-quality visual storytelling.
 							</p>
 						</div>
 
