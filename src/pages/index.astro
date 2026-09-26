@@ -39,6 +39,13 @@ import "../styles/global.css";
 
 			<div class="flex flex-wrap justify-start gap-4 mt-12 md:mt-16">
 				<a
+					href="https://github.com/abikurian/resume"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="border border-white rounded-full px-6 py-2 text-xs md:text-sm uppercase tracking-widest bg-transparent hover:bg-white hover:text-black transition-none font-['Inter']"
+					>READ RESUME</a
+				>
+				<a
 					href="#portfolio"
 					class="border border-white rounded-full px-6 py-2 text-xs md:text-sm uppercase tracking-widest bg-transparent hover:bg-white hover:text-black transition-none font-['Inter']"
 					>Systems Portfolio</a
@@ -189,35 +196,7 @@ import "../styles/global.css";
 				id="portfolio-grid"
 				class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-l border-white/10 font-['Inter'] uppercase"
 			>
-				<!-- Project 1: SpendStudent -->
-				<div
-					data-category="full-stack"
-					class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
-				>
-					<div>
-						<h3
-							class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
-						>
-							SpendStudent
-						</h3>
-						<p
-							class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
-						>
-							A robust personal finance tracker and expense
-							splitter. Built with a two-way Dexie.js and Supabase
-							sync engine, resolving complex React race conditions
-							for seamless offline-to-cloud parity. Secured via
-							strict RLS.
-						</p>
-					</div>
-					<div
-						class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
-					>
-						REACT // SUPABASE (POSTGRESQL) // DEXIE.JS // TAILWIND
-					</div>
-				</div>
-
-				<!-- Project 2: Smart Yatra -->
+				<!-- Project 1: SMART YATRA -->
 				<div
 					data-category="mobile-os"
 					class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
@@ -226,15 +205,12 @@ import "../styles/global.css";
 						<h3
 							class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
 						>
-							Smart Yatra
+							SMART YATRA
 						</h3>
 						<p
 							class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
 						>
-							A real-time fleet transit app. Engineered a custom
-							Dart algorithm to throttle GPS pings based on bus
-							speed, minimizing Firebase quota drain and battery
-							usage while keeping live tracking highly accurate.
+							A real-time, high-tech fleet management application built to track campus buses. Engineered a custom geolocation algorithm to dynamically optimize cloud sync frequency and battery usage.
 						</p>
 					</div>
 					<div
@@ -244,34 +220,103 @@ import "../styles/global.css";
 					</div>
 				</div>
 
-				<!-- Project 3: Data Engine -->
+				<!-- Project 2: LOCAL WORKFORCE RECRUITMENT PORTAL -->
 				<div
-					data-category="ai-data"
+					data-category="full-stack"
 					class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
 				>
 					<div>
 						<h3
 							class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
 						>
-							Data Management Engine
+							LOCAL WORKFORCE RECRUITMENT PORTAL (IN DEVELOPMENT)
 						</h3>
 						<p
 							class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
 						>
-							A secure backend automation pipeline for student
-							marks entry. Utilizes Python and pandas to parse
-							local data and securely push it into cloud-backed
-							Google Sheets via service account authentication.
+							A proposed web and mobile platform designed to digitize temporary staffing for the event and hospitality industry. Currently in the research phase, the system focuses on tracking worker reliability, role-based access control, and location-based job discovery.
 						</p>
 					</div>
 					<div
 						class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
 					>
-						PYTHON // PANDAS // GSPREAD // GOOGLE CLOUD
+						RESEARCH & SYSTEM ARCHITECTURE PHASE
 					</div>
 				</div>
 
-				<!-- Project 4: Whispers of Silence -->
+				<!-- Project 3: SPENDSTUDENT (FINANCE TRACKER) -->
+				<div
+					data-category="full-stack"
+					class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
+				>
+					<div>
+						<h3
+							class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
+						>
+							SPENDSTUDENT (FINANCE TRACKER)
+						</h3>
+						<p
+							class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
+						>
+							A robust personal finance tracker featuring optical character recognition (OCR) for receipt processing. Utilizes a two-way sync engine to ensure seamless offline-to-cloud data parity, protected with strict Row Level Security.
+						</p>
+					</div>
+					<div
+						class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
+					>
+						REACT // SUPABASE (POSTGRESQL) // DEXIE.JS
+					</div>
+				</div>
+
+				<!-- Project 4: AI-POWERED SMART VOTING SYSTEM -->
+				<div
+					data-category="ai-data full-stack"
+					class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
+				>
+					<div>
+						<h3
+							class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
+						>
+							AI-POWERED SMART VOTING SYSTEM
+						</h3>
+						<p
+							class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
+						>
+							An intelligent voting platform integrating machine learning for secure user verification, ensuring a tamper-proof tabulation environment.
+						</p>
+					</div>
+					<div
+						class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
+					>
+						PYTHON // NEXT.JS // MONGODB
+					</div>
+				</div>
+
+				<!-- Project 5: INTERACTIVE WEB PORTFOLIOS -->
+				<div
+					data-category="full-stack creative"
+					class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
+				>
+					<div>
+						<h3
+							class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
+						>
+							INTERACTIVE WEB PORTFOLIOS
+						</h3>
+						<p
+							class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
+						>
+							Architected highly optimized, responsive developer and videography portfolios featuring glassmorphism, 3D scroll-based canvas animations, and brutalist UI layouts.
+						</p>
+					</div>
+					<div
+						class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
+					>
+						ASTRO // REACT // TAILWIND CSS // VERCEL
+					</div>
+				</div>
+
+				<!-- Project 6: FUGINIZ FESTIVAL PRODUCTION -->
 				<div
 					data-category="creative"
 					class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
@@ -280,22 +325,42 @@ import "../styles/global.css";
 						<h3
 							class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
 						>
-							"Whispers of Silence"
+							FUGINIZ FESTIVAL PRODUCTION
 						</h3>
 						<p
 							class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
 						>
-							A complex 3D creative production utilizing advanced
-							keyframing mechanics, lighting balance, character
-							meshes, and custom camera track interpolation.
-							Finished with a 10-bit cinematic color grading
-							pipeline.
+							Produced a promotional video for a college technology and arts festival. Planned video storyboards, configured S-Log camera settings, and executed precise editing and color-grading workflows.
 						</p>
 					</div>
 					<div
 						class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
 					>
-						BLENDER // DAVINCI RESOLVE // ANIMATION PIPELINES
+						SONY A7 IV // DAVINCI RESOLVE
+					</div>
+				</div>
+
+				<!-- Project 7: "WHISPERS OF SILENCE" -->
+				<div
+					data-category="creative"
+					class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
+				>
+					<div>
+						<h3
+							class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
+						>
+							"WHISPERS OF SILENCE"
+						</h3>
+						<p
+							class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
+						>
+							A complex 3D creative production utilizing advanced keyframing mechanics, lighting balance, character meshes, and custom camera track interpolation. Finished with a professional cinematic color grading pipeline.
+						</p>
+					</div>
+					<div
+						class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
+					>
+						BLENDER // DAVINCI RESOLVE // ANIMATION PIPELINE
 					</div>
 				</div>
 			</div>
@@ -326,6 +391,50 @@ import "../styles/global.css";
 					<div
 						class="border-l border-white/10 pl-6 space-y-10 relative"
 					>
+						<!-- Seminar -->
+						<div class="relative">
+							<div
+								class="w-2.5 h-2.5 bg-white absolute -left-[31px] top-1.5 border border-black z-10 rounded-none"
+							>
+							</div>
+							<span
+								class="font-['JetBrains_Mono'] text-xs text-[#b3996b] tracking-wider block mb-1"
+								>2026</span
+							>
+							<h4
+								class="font-bold text-sm tracking-wide text-white uppercase font-['Inter']"
+							>
+								ACADEMIC SEMINAR
+							</h4>
+							<p
+								class="font-['JetBrains_Mono'] text-xs text-white/60 mt-2 leading-relaxed"
+							>
+								Presented research on "Personalized Intelligent Job Recommendation Based on Deep Learning in Elasticsearch Environment," summarizing complex methodologies and preparing technical defense notes.
+							</p>
+						</div>
+
+						<!-- Media Team Head -->
+						<div class="relative">
+							<div
+								class="w-2.5 h-2.5 bg-white absolute -left-[31px] top-1.5 border border-black z-10 rounded-none"
+							>
+							</div>
+							<span
+								class="font-['JetBrains_Mono'] text-xs text-[#b3996b] tracking-wider block mb-1"
+								>2026</span
+							>
+							<h4
+								class="font-bold text-sm tracking-wide text-white uppercase font-['Inter']"
+							>
+								MEDIA TEAM HEAD - ONAM
+							</h4>
+							<p
+								class="font-['JetBrains_Mono'] text-xs text-white/60 mt-2 leading-relaxed"
+							>
+								Led the creative direction and video production for the college festival, seamlessly blending technical workflows with high-quality visual storytelling.
+							</p>
+						</div>
+
 						<!-- Experience 1 -->
 						<div class="relative">
 							<div
@@ -618,7 +727,7 @@ import "../styles/global.css";
 					>INSTAGRAM</a
 				>
 				<a
-					href="https://github.com/abikurian"
+					href="https://github.com/abikurian/portfolio"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="block py-4 border-r border-white/10 hover:bg-white hover:text-black transition-none"
@@ -839,7 +948,7 @@ import "../styles/global.css";
 							class="grid grid-cols-2 gap-4 text-sm font-bold font-['Bebas_Neue'] tracking-wider"
 						>
 							<a
-								href="https://github.com/abikurian"
+								href="https://github.com/abikurian/portfolio"
 								target="_blank"
 								rel="noopener noreferrer"
 								class="block border border-white/10 py-3 text-center hover:bg-white hover:text-black hover:border-white transition-none"
