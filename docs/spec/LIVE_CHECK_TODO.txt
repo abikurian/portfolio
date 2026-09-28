@@ -1,0 +1,24 @@
+===============================================================================
+LIVE CHECK TODO CHECKLIST
+===============================================================================
+Items marked NEEDS LIVE CHECK during static source audit, requiring manual live browser verification.
+
+[ ] HERO SECTION & 3D CANVAS
+    - Check actual rendered 3D Spline scene iframe/canvas dimensions at 1920px vs 375px viewport.
+    - Verify canvas rendering frame rate performance (target: 60 FPS).
+    - Check actual color contrast ratio of hero subheading (`text-neutral-300` on `#09090b`).
+
+[ ] NAVIGATION & GLASSMORPHISM
+    - Verify background backdrop-blur blur depth rendering on Safari vs Chrome.
+    - Check sticky navbar position offset during scroll down page.
+
+[ ] PORTFOLIO FILTER GRID
+    - Test 3D spring tilt physics feel on touch devices vs desktop mouse move.
+    - Verify layout animation transition timing during filter switching.
+
+[ ] TELEMETRY & ENGINE MONITOR
+    - Verify live FPS counter calculation accuracy in live browser loop.
+    - Check scroll depth percentage updates during page scroll.
+
+[ ] MEDIA ASSETS
+    - Check exact rendering dimensions and byte sizes for 61 canvas animation PNG frames (`ezgif-frame-001.png` - `061.png`).
