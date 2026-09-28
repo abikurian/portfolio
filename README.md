@@ -33,4 +33,8 @@ npm run dev
 npm run build
 
 # 4. Preview the production build locally before deployment
+<<<<<<< HEAD
 npm run preview
+=======
+npm run preview
+>>>>>>> aa2df1b934efb35704d422c9850f1e93af770e67
