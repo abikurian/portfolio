@@ -1,46 +1,36 @@
-# Astro Starter Kit: Basics
+# Abi Kurian Varghese // Interactive Systems Portfolio
 
-```sh
-npm create astro@latest -- --template basics
-```
+A high-fidelity cinematic web interface designed to showcase full-stack software engineering projects and system architectures. Built with a strict "Swiss Brutalist" design language, the portfolio balances heavy visual elements—like glassmorphism and scroll-triggered canvas components—with blazing-fast web performance.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Live Deployment
+**URL:** [abikurian.vercel.app](https://portfolioo-six-roan.vercel.app/)
 
-## 🚀 Project Structure
+## System Architecture & Tech Stack
+* **Core Framework:** [Astro](https://astro.build/) (Leveraging Island Architecture for a minimal JavaScript payload)
+* **UI Components:** React
+* **Styling:** Tailwind CSS
+* **Language:** TypeScript
+* **Animations & Rendering:** IntersectionObserver API, Spline (WebGL)
+* **Deployment:** Vercel
 
-Inside of your Astro project, you'll see the following folders and files:
+## Core Features
+* **Optimized DOM Rendering:** Utilizes the IntersectionObserver API to manage scroll-triggered animations and full-bleed layout transitions, preventing browser lag during heavy repaints.
+* **Astro Islands:** Complex React components are mounted only when required, keeping the baseline performance fast and efficient.
+* **Swiss Brutalist UI:** High-contrast dark mode palettes, sharp borders, monospace typography, and uppercase tracking for a distinct, engineering-focused aesthetic.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+## Local Development Setup
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+To run this project locally, ensure you have Node.js installed, then execute the following commands from the project root:
 
-## 🧞 Commands
+```bash
+# 1. Install dependencies
+npm install
 
-All commands are run from the root of the project, from a terminal:
+# 2. Start the local development server (runs at localhost:4321)
+npm run dev
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+# 3. Build the production site to the ./dist/ directory
+npm run build
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+# 4. Preview the production build locally before deployment
+npm run preview

@@ -5,1013 +5,987 @@ import "../styles/global.css";
 ---
 
 <Layout>
-	<!-- Fixed Canvas Background -->
-	<div class="fixed top-0 left-0 z-0 w-screen h-screen">
-		<CanvasScrollAnimation client:only="react" />
-	</div>
+  <!-- Fixed Canvas Background -->
+  <div class="fixed top-0 left-0 z-0 w-screen h-screen">
+    <CanvasScrollAnimation client:only="react" />
+  </div>
 
-	<!-- Dynamic Scroll Backdrop Overlay -->
-	<div
-		id="scroll-overlay"
-		class="fixed top-0 left-0 z-5 w-screen h-screen bg-[#121214] opacity-0 pointer-events-none"
-	>
-	</div>
+  <!-- Dynamic Scroll Backdrop Overlay -->
+  <div
+    id="scroll-overlay"
+    class="fixed top-0 left-0 z-5 w-screen h-screen bg-[#121214] opacity-0 pointer-events-none"
+  >
+  </div>
 
-	<!-- Main Overlay Content Layer -->
-	<main
-		class="relative z-10 w-full min-h-[500vh] pb-24 text-white selection:bg-white selection:text-black"
-	>
-		<!-- Hero Section -->
-		<section
-			class="w-full flex flex-col items-start justify-center text-left px-6 md:px-16 pt-[20vh] pb-[10vh] relative z-20"
-		>
-			<h1
-				class="font-['Bebas_Neue'] text-[15vw] md:text-[12vw] leading-none tracking-tighter uppercase m-0 p-0 break-words text-left"
-			>
-				ABI KURIAN<br />VARGHESE
-			</h1>
+  <!-- Main Overlay Content Layer -->
+  <main
+    class="relative z-10 w-full min-h-[500vh] pb-24 text-white selection:bg-white selection:text-black"
+  >
+    <!-- Hero Section -->
+    <section
+      class="w-full flex flex-col items-start justify-center text-left px-6 md:px-16 pt-[20vh] pb-[10vh] relative z-20"
+    >
+      <h1
+        class="font-['Bebas_Neue'] text-[15vw] md:text-[12vw] leading-none tracking-tighter uppercase m-0 p-0 break-words text-left"
+      >
+        ABI KURIAN<br />VARGHESE
+      </h1>
 
-			<p
-				class="font-['Inter'] text-sm md:text-lg tracking-[0.3em] uppercase mt-8 border-l-2 border-[#b3996b]/30 pl-4 text-white/80"
-			>
-				Full-Stack Software Engineer & Creative Technologist
-			</p>
+      <p
+        class="font-['Inter'] text-sm md:text-lg tracking-[0.3em] uppercase mt-8 border-l-2 border-[#b3996b]/30 pl-4 text-white/80"
+      >
+        Full-Stack Software Engineer & Creative Technologist
+      </p>
 
-			<div class="flex flex-wrap justify-start gap-4 mt-12 md:mt-16">
-				<a
-					href="https://github.com/abikurian/resume"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="border border-white rounded-full px-6 py-2 text-xs md:text-sm uppercase tracking-widest bg-transparent hover:bg-white hover:text-black transition-none font-['Inter']"
-					>READ RESUME</a
-				>
-				<a
-					href="#portfolio"
-					class="border border-white rounded-full px-6 py-2 text-xs md:text-sm uppercase tracking-widest bg-transparent hover:bg-white hover:text-black transition-none font-['Inter']"
-					>Systems Portfolio</a
-				>
-				<a
-					href="#chronology"
-					class="border border-white rounded-full px-6 py-2 text-xs md:text-sm uppercase tracking-widest bg-transparent hover:bg-white hover:text-black transition-none font-['Inter']"
-					>Chronology</a
-				>
-				<a
-					href="#about"
-					class="border border-white rounded-full px-6 py-2 text-xs md:text-sm uppercase tracking-widest bg-transparent hover:bg-white hover:text-black transition-none font-['Inter']"
-					>About</a
-				>
-				<a
-					href="#contact"
-					class="border border-white rounded-full px-6 py-2 text-xs md:text-sm uppercase tracking-widest bg-transparent hover:bg-white hover:text-black transition-none font-['Inter']"
-					>Contact</a
-				>
-			</div>
-		</section>
+      <div class="flex flex-wrap justify-start gap-4 mt-12 md:mt-16">
+        <a
+          href="https://github.com/abikurian/resume"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="border border-white rounded-full px-6 py-2 text-xs md:text-sm uppercase tracking-widest bg-transparent hover:bg-white hover:text-black transition-none font-['Inter']"
+          >READ RESUME</a
+        >
+        <a
+          href="#portfolio"
+          class="border border-white rounded-full px-6 py-2 text-xs md:text-sm uppercase tracking-widest bg-transparent hover:bg-white hover:text-black transition-none font-['Inter']"
+          >Systems Portfolio</a
+        >
+        <a
+          href="#chronology"
+          class="border border-white rounded-full px-6 py-2 text-xs md:text-sm uppercase tracking-widest bg-transparent hover:bg-white hover:text-black transition-none font-['Inter']"
+          >Chronology</a
+        >
+        <a
+          href="#about"
+          class="border border-white rounded-full px-6 py-2 text-xs md:text-sm uppercase tracking-widest bg-transparent hover:bg-white hover:text-black transition-none font-['Inter']"
+          >About</a
+        >
+        <a
+          href="#contact"
+          class="border border-white rounded-full px-6 py-2 text-xs md:text-sm uppercase tracking-widest bg-transparent hover:bg-white hover:text-black transition-none font-['Inter']"
+          >Contact</a
+        >
+      </div>
+    </section>
 
-		<!-- Navigation Hub -->
-		<section
-			id="hub"
-			class="w-full px-6 md:px-16 mt-[20vh] md:mt-[30vh] scroll-mt-[5vh] relative z-20"
-		>
-			<div
-				class="grid grid-cols-1 md:grid-cols-2 gap-0 w-full max-w-6xl mx-auto font-['Bebas_Neue'] text-3xl md:text-5xl lg:text-6xl uppercase tracking-widest leading-none border border-white/10"
-			>
-				<!-- Left Column -->
-				<a
-					href="#portfolio"
-					class="group block border-r-0 md:border-r border-b md:border-b-0 border-white/10 p-8 md:p-12 hover:bg-white hover:text-black transition-none"
-				>
-					<div
-						class="h-full flex flex-col justify-between min-h-[200px]"
-					>
-						<span
-							class="text-xs md:text-sm font-['Inter'] tracking-[0.3em] opacity-70 group-hover:opacity-100 font-semibold mb-8 block"
-							>Projects</span
-						>
-						<h3 class="mt-auto">SYSTEMS<br />PORTFOLIO</h3>
-					</div>
-				</a>
+    <!-- Navigation Hub -->
+    <section
+      id="hub"
+      class="w-full px-6 md:px-16 mt-[20vh] md:mt-[30vh] scroll-mt-[5vh] relative z-20"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-0 w-full max-w-6xl mx-auto font-['Bebas_Neue'] text-3xl md:text-5xl lg:text-6xl uppercase tracking-widest leading-none border border-white/10"
+      >
+        <!-- Left Column -->
+        <a
+          href="#portfolio"
+          class="group block border-r-0 md:border-r border-b md:border-b-0 border-white/10 p-8 md:p-12 hover:bg-white hover:text-black transition-none"
+        >
+          <div class="h-full flex flex-col justify-between min-h-[200px]">
+            <span
+              class="text-xs md:text-sm font-['Inter'] tracking-[0.3em] opacity-70 group-hover:opacity-100 font-semibold mb-8 block"
+              >Projects</span
+            >
+            <h3 class="mt-auto">SYSTEMS<br />PORTFOLIO</h3>
+          </div>
+        </a>
 
-				<!-- Right Column -->
-				<a
-					href="#chronology"
-					class="group block p-8 md:p-12 hover:bg-white text-white hover:text-black transition-none"
-				>
-					<div
-						class="h-full flex flex-col justify-between min-h-[200px]"
-					>
-						<span
-							class="text-xs md:text-sm font-['Inter'] tracking-[0.3em] opacity-70 group-hover:opacity-100 font-semibold mb-8 block"
-							>Experience</span
-						>
-						<h3 class="mt-auto">CHRONOLOGY &<br />RESUME</h3>
-					</div>
-				</a>
-			</div>
-		</section>
+        <!-- Right Column -->
+        <a
+          href="#chronology"
+          class="group block p-8 md:p-12 hover:bg-white text-white hover:text-black transition-none"
+        >
+          <div class="h-full flex flex-col justify-between min-h-[200px]">
+            <span
+              class="text-xs md:text-sm font-['Inter'] tracking-[0.3em] opacity-70 group-hover:opacity-100 font-semibold mb-8 block"
+              >Experience</span
+            >
+            <h3 class="mt-auto">CHRONOLOGY &<br />RESUME</h3>
+          </div>
+        </a>
+      </div>
+    </section>
 
-		<!-- Case Study 1: Local Workforce Portal -->
-		<section
-			id="localworkforce"
-			class="px-6 md:px-16 max-w-4xl mt-[20vh] md:mt-[30vh] mb-16 md:mb-32 scroll-mt-[5vh]"
-		>
-			<div class="bg-black/40 border-l border-[#b3996b]/30 p-6 md:p-12">
-				<h2
-					class="font-['Bebas_Neue'] text-4xl md:text-8xl leading-none tracking-tight uppercase mb-8"
-				>
-					LOCAL WORKFORCE /<br />RECRUITMENT PORTAL
-				</h2>
-				<div
-					class="font-['Inter'] text-lg md:text-xl leading-relaxed space-y-6 font-light"
-				>
-					<p>
-						The event and hospitality industry relies heavily on informal,
-						fragmented channels for short-term staffing. To solve this,
-						I am architecting a centralized web and mobile-based
-						recruitment portal designed to digitize and streamline hiring
-						for catering companies, photography studios, and event
-						management teams.
-					</p>
-					<p>
-						Unlike traditional freelance platforms that rely on portfolios,
-						this system prioritizes worker reliability through verified job
-						completion histories, attendance records, and employer ratings.
-						The backend architecture incorporates strict role-based access
-						control (RBAC), secure authentication, and location-based job
-						discovery to create a highly efficient, transparent local
-						employment ecosystem.
-					</p>
-				</div>
-			</div>
-		</section>
+    <!-- Case Study 1: Local Workforce Portal -->
+    <section
+      id="localworkforce"
+      class="px-6 md:px-16 max-w-4xl mt-[20vh] md:mt-[30vh] mb-16 md:mb-32 scroll-mt-[5vh]"
+    >
+      <div class="bg-black/40 border-l border-[#b3996b]/30 p-6 md:p-12">
+        <h2
+          class="font-['Bebas_Neue'] text-4xl md:text-8xl leading-none tracking-tight uppercase mb-8"
+        >
+          LOCAL WORKFORCE /<br />RECRUITMENT PORTAL
+        </h2>
+        <div
+          class="font-['Inter'] text-lg md:text-xl leading-relaxed space-y-6 font-light"
+        >
+          <p>
+            The event and hospitality industry relies heavily on informal,
+            fragmented channels for short-term staffing. To solve this, I am
+            architecting a centralized web and mobile-based recruitment portal
+            designed to digitize and streamline hiring for catering companies,
+            photography studios, and event management teams.
+          </p>
+          <p>
+            Unlike traditional freelance platforms that rely on portfolios, this
+            system prioritizes worker reliability through verified job
+            completion histories, attendance records, and employer ratings. The
+            backend architecture incorporates strict role-based access control
+            (RBAC), secure authentication, and location-based job discovery to
+            create a highly efficient, transparent local employment ecosystem.
+          </p>
+        </div>
+      </div>
+    </section>
 
-		<!-- SYSTEMS PORTFOLIO -->
-		<section
-			id="portfolio"
-			class="max-w-[1400px] w-full mx-auto px-6 md:px-16 mt-16 md:mt-32 mb-16 md:mb-32 scroll-mt-[5vh]"
-		>
-			<div class="mb-12 border-l-2 border-[#b3996b]/30 pl-6">
-				<h2
-					class="font-['Bebas_Neue'] text-4xl md:text-7xl leading-none tracking-tight uppercase"
-				>
-					SYSTEMS PORTFOLIO
-				</h2>
-			</div>
+    <!-- SYSTEMS PORTFOLIO -->
+    <section
+      id="portfolio"
+      class="max-w-[1400px] w-full mx-auto px-6 md:px-16 mt-16 md:mt-32 mb-16 md:mb-32 scroll-mt-[5vh]"
+    >
+      <div class="mb-12 border-l-2 border-[#b3996b]/30 pl-6">
+        <h2
+          class="font-['Bebas_Neue'] text-4xl md:text-7xl leading-none tracking-tight uppercase"
+        >
+          SYSTEMS PORTFOLIO
+        </h2>
+      </div>
 
-			<!-- Filter Row -->
-			<div
-				class="flex flex-wrap gap-2 md:gap-4 mb-8 font-['JetBrains_Mono'] text-xs uppercase tracking-widest border-b border-white/10 pb-6"
-			>
-				<button
-					data-filter="all"
-					class="px-3 py-1 border border-white bg-white text-black transition-none cursor-pointer rounded-none"
-					>ALL</button
-				>
-				<button
-					data-filter="full-stack"
-					class="px-3 py-1 border border-white/20 hover:bg-white hover:text-black hover:border-white transition-none cursor-pointer rounded-none"
-					>FULL-STACK</button
-				>
-				<button
-					data-filter="mobile-os"
-					class="px-3 py-1 border border-white/20 hover:bg-white hover:text-black hover:border-white transition-none cursor-pointer rounded-none"
-					>MOBILE OS</button
-				>
-				<button
-					data-filter="ai-data"
-					class="px-3 py-1 border border-white/20 hover:bg-white hover:text-black hover:border-white transition-none cursor-pointer rounded-none"
-					>AI & DATA</button
-				>
-				<button
-					data-filter="creative"
-					class="px-3 py-1 border border-white/20 hover:bg-white hover:text-black hover:border-white transition-none cursor-pointer rounded-none"
-					>CREATIVE</button
-				>
-			</div>
+      <!-- Filter Row -->
+      <div
+        class="flex flex-wrap gap-2 md:gap-4 mb-8 font-['JetBrains_Mono'] text-xs uppercase tracking-widest border-b border-white/10 pb-6"
+      >
+        <button
+          data-filter="all"
+          class="px-3 py-1 border border-white bg-white text-black transition-none cursor-pointer rounded-none"
+          >ALL</button
+        >
+        <button
+          data-filter="full-stack"
+          class="px-3 py-1 border border-white/20 hover:bg-white hover:text-black hover:border-white transition-none cursor-pointer rounded-none"
+          >FULL-STACK</button
+        >
+        <button
+          data-filter="mobile-os"
+          class="px-3 py-1 border border-white/20 hover:bg-white hover:text-black hover:border-white transition-none cursor-pointer rounded-none"
+          >MOBILE OS</button
+        >
+        <button
+          data-filter="ai-data"
+          class="px-3 py-1 border border-white/20 hover:bg-white hover:text-black hover:border-white transition-none cursor-pointer rounded-none"
+          >AI & DATA</button
+        >
+        <button
+          data-filter="creative"
+          class="px-3 py-1 border border-white/20 hover:bg-white hover:text-black hover:border-white transition-none cursor-pointer rounded-none"
+          >CREATIVE</button
+        >
+      </div>
 
-			<!-- Rigid Grid -->
-			<div
-				id="portfolio-grid"
-				class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-l border-white/10 font-['Inter'] uppercase"
-			>
-				<!-- Project 1: LOCAL WORKFORCE RECRUITMENT PORTAL -->
-				<div
-					data-category="full-stack"
-					class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
-				>
-					<div>
-						<h3
-							class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
-						>
-							LOCAL WORKFORCE RECRUITMENT PORTAL (IN DEVELOPMENT)
-						</h3>
-						<p
-							class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
-						>
-							A proposed web and mobile platform designed to digitize temporary staffing for the event and hospitality industry. Currently in the research phase, the system focuses on tracking worker reliability, role-based access control, and location-based job discovery.
-						</p>
-					</div>
-					<div
-						class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
-					>
-						RESEARCH & SYSTEM ARCHITECTURE PHASE
-					</div>
-				</div>
+      <!-- Rigid Grid -->
+      <div
+        id="portfolio-grid"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-l border-white/10 font-['Inter'] uppercase"
+      >
+        <!-- Project 1: LOCAL WORKFORCE RECRUITMENT PORTAL -->
+        <div
+          data-category="full-stack"
+          class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
+        >
+          <div>
+            <h3
+              class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
+            >
+              LOCAL WORKFORCE RECRUITMENT PORTAL (IN DEVELOPMENT)
+            </h3>
+            <p
+              class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
+            >
+              A proposed web and mobile platform designed to digitize temporary
+              staffing for the event and hospitality industry. Currently in the
+              research phase, the system focuses on tracking worker reliability,
+              role-based access control, and location-based job discovery.
+            </p>
+          </div>
+          <div
+            class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
+          >
+            RESEARCH & SYSTEM ARCHITECTURE PHASE
+          </div>
+        </div>
 
-				<!-- Project 2: SMART YATRA -->
-				<div
-					data-category="mobile-os"
-					class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
-				>
-					<div>
-						<h3
-							class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
-						>
-							SMART YATRA
-						</h3>
-						<p
-							class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
-						>
-							A real-time, high-tech fleet management application built to track campus buses. Engineered a custom geolocation algorithm to dynamically optimize cloud sync frequency and battery usage.
-						</p>
-					</div>
-					<div
-						class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
-					>
-						DART // FLUTTER // FIREBASE
-					</div>
-				</div>
+        <!-- Project 2: SMART YATRA -->
+        <div
+          data-category="mobile-os"
+          class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
+        >
+          <div>
+            <h3
+              class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
+            >
+              SMART YATRA
+            </h3>
+            <p
+              class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
+            >
+              A real-time, high-tech fleet management application built to track
+              campus buses. Engineered a custom geolocation algorithm to
+              dynamically optimize cloud sync frequency and battery usage.
+            </p>
+          </div>
+          <div
+            class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
+          >
+            DART // FLUTTER // FIREBASE
+          </div>
+        </div>
 
-				<!-- Project 3: SPENDSTUDENT (FINANCE TRACKER) -->
-				<div
-					data-category="full-stack"
-					class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
-				>
-					<div>
-						<h3
-							class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
-						>
-							SPENDSTUDENT (FINANCE TRACKER)
-						</h3>
-						<p
-							class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
-						>
-							A robust personal finance tracker featuring optical character recognition (OCR) for receipt processing. Utilizes a two-way sync engine to ensure seamless offline-to-cloud data parity, protected with strict Row Level Security.
-						</p>
-					</div>
-					<div
-						class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
-					>
-						REACT // SUPABASE (POSTGRESQL) // DEXIE.JS
-					</div>
-				</div>
+        <!-- Project 3: SPENDSTUDENT (FINANCE TRACKER) -->
+        <div
+          data-category="full-stack"
+          class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
+        >
+          <div>
+            <h3
+              class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
+            >
+              SPENDSTUDENT (FINANCE TRACKER)
+            </h3>
+            <p
+              class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
+            >
+              A robust personal finance tracker featuring optical character
+              recognition (OCR) for receipt processing. Utilizes a two-way sync
+              engine to ensure seamless offline-to-cloud data parity, protected
+              with strict Row Level Security.
+            </p>
+          </div>
+          <div
+            class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
+          >
+            REACT // SUPABASE (POSTGRESQL) // DEXIE.JS
+          </div>
+        </div>
 
-				<!-- Project 4: AI-POWERED SMART VOTING SYSTEM -->
-				<div
-					data-category="ai-data full-stack"
-					class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
-				>
-					<div>
-						<h3
-							class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
-						>
-							AI-POWERED SMART VOTING SYSTEM
-						</h3>
-						<p
-							class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
-						>
-							An intelligent voting platform integrating machine learning for secure user verification, ensuring a tamper-proof tabulation environment.
-						</p>
-					</div>
-					<div
-						class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
-					>
-						PYTHON // NEXT.JS // MONGODB
-					</div>
-				</div>
+        <!-- Project 4: AI-POWERED SMART VOTING SYSTEM -->
+        <div
+          data-category="ai-data full-stack"
+          class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
+        >
+          <div>
+            <h3
+              class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
+            >
+              AI-POWERED SMART VOTING SYSTEM
+            </h3>
+            <p
+              class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
+            >
+              An intelligent voting platform integrating machine learning for
+              secure user verification, ensuring a tamper-proof tabulation
+              environment.
+            </p>
+          </div>
+          <div
+            class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
+          >
+            PYTHON // NEXT.JS // MONGODB
+          </div>
+        </div>
 
-				<!-- Project 5: INTERACTIVE WEB PORTFOLIOS -->
-				<div
-					data-category="full-stack creative"
-					class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
-				>
-					<div>
-						<h3
-							class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
-						>
-							INTERACTIVE WEB PORTFOLIOS
-						</h3>
-						<p
-							class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
-						>
-							Architected highly optimized, responsive developer and videography portfolios featuring glassmorphism, 3D scroll-based canvas animations, and brutalist UI layouts.
-						</p>
-					</div>
-					<div
-						class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
-					>
-						ASTRO // REACT // TAILWIND CSS // VERCEL
-					</div>
-				</div>
+        <!-- Project 5: INTERACTIVE WEB PORTFOLIOS -->
+        <div
+          data-category="full-stack creative"
+          class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
+        >
+          <div>
+            <h3
+              class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
+            >
+              INTERACTIVE WEB PORTFOLIOS
+            </h3>
+            <p
+              class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
+            >
+              Architected highly optimized, responsive developer and videography
+              portfolios featuring glassmorphism, 3D scroll-based canvas
+              animations, and brutalist UI layouts.
+            </p>
+          </div>
+          <div
+            class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
+          >
+            ASTRO // REACT // TAILWIND CSS // VERCEL
+          </div>
+        </div>
 
-				<!-- Project 6: FUGINIZ FESTIVAL PRODUCTION -->
-				<div
-					data-category="creative"
-					class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
-				>
-					<div>
-						<h3
-							class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
-						>
-							FUGINIZ FESTIVAL PRODUCTION
-						</h3>
-						<p
-							class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
-						>
-							Produced a promotional video for a college technology and arts festival. Planned video storyboards, configured S-Log camera settings, and executed precise editing and color-grading workflows.
-						</p>
-					</div>
-					<div
-						class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
-					>
-						SONY A7 IV // DAVINCI RESOLVE
-					</div>
-				</div>
+        <!-- Project 6: FUGINIZ FESTIVAL PRODUCTION -->
+        <div
+          data-category="creative"
+          class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
+        >
+          <div>
+            <h3
+              class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
+            >
+              FUGINIZ FESTIVAL PRODUCTION
+            </h3>
+            <p
+              class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
+            >
+              Produced a promotional video for a college technology and arts
+              festival. Planned video storyboards, configured S-Log camera
+              settings, and executed precise editing and color-grading
+              workflows.
+            </p>
+          </div>
+          <div
+            class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
+          >
+            SONY A7 IV // DAVINCI RESOLVE
+          </div>
+        </div>
 
-				<!-- Project 7: "WHISPERS OF SILENCE" -->
-				<div
-					data-category="creative"
-					class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
-				>
-					<div>
-						<h3
-							class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
-						>
-							"WHISPERS OF SILENCE"
-						</h3>
-						<p
-							class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
-						>
-							A complex 3D creative production utilizing advanced keyframing mechanics, lighting balance, character meshes, and custom camera track interpolation. Finished with a professional cinematic color grading pipeline.
-						</p>
-					</div>
-					<div
-						class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
-					>
-						BLENDER // DAVINCI RESOLVE // ANIMATION PIPELINE
-					</div>
-				</div>
-			</div>
-		</section>
+        <!-- Project 7: "WHISPERS OF SILENCE" -->
+        <div
+          data-category="creative"
+          class="p-8 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group flex flex-col justify-between min-h-[280px]"
+        >
+          <div>
+            <h3
+              class="font-['Bebas_Neue'] text-2xl tracking-wider mb-4 text-white group-hover:text-black transition-none"
+            >
+              "WHISPERS OF SILENCE"
+            </h3>
+            <p
+              class="font-['JetBrains_Mono'] text-xs text-white/60 group-hover:text-black/80 transition-none leading-relaxed"
+            >
+              A complex 3D creative production utilizing advanced keyframing
+              mechanics, lighting balance, character meshes, and custom camera
+              track interpolation. Finished with a professional cinematic color
+              grading pipeline.
+            </p>
+          </div>
+          <div
+            class="mt-8 pt-4 border-t border-white/10 group-hover:border-black/10 transition-none font-['JetBrains_Mono'] text-[10px] text-[#b3996b] group-hover:text-black/60 tracking-wider"
+          >
+            BLENDER // DAVINCI RESOLVE // ANIMATION PIPELINE
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- PROFESSIONAL CHRONOLOGY & RESUME -->
-		<section
-			id="chronology"
-			class="px-6 md:px-16 max-w-7xl w-full mx-auto mt-16 md:mt-32 mb-16 md:mb-32 scroll-mt-[5vh]"
-		>
-			<div class="mb-12 border-l-2 border-[#b3996b]/30 pl-6">
-				<h2
-					class="font-['Bebas_Neue'] text-4xl md:text-7xl leading-none tracking-tight uppercase"
-				>
-					PROFESSIONAL CHRONOLOGY
-				</h2>
-			</div>
+    <!-- PROFESSIONAL CHRONOLOGY & RESUME -->
+    <section
+      id="chronology"
+      class="px-6 md:px-16 max-w-7xl w-full mx-auto mt-16 md:mt-32 mb-16 md:mb-32 scroll-mt-[5vh]"
+    >
+      <div class="mb-12 border-l-2 border-[#b3996b]/30 pl-6">
+        <h2
+          class="font-['Bebas_Neue'] text-4xl md:text-7xl leading-none tracking-tight uppercase"
+        >
+          PROFESSIONAL CHRONOLOGY
+        </h2>
+      </div>
 
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-16 font-['Inter']">
-				<!-- Left Column: Experience & Education -->
-				<div>
-					<h3
-						class="font-['Bebas_Neue'] text-2xl md:text-3xl tracking-wider uppercase border-b border-white/10 pb-4 mb-8"
-					>
-						EXPERIENCE & EDUCATION
-					</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 font-['Inter']">
+        <!-- Left Column: Experience & Education -->
+        <div>
+          <h3
+            class="font-['Bebas_Neue'] text-2xl md:text-3xl tracking-wider uppercase border-b border-white/10 pb-4 mb-8"
+          >
+            EXPERIENCE & EDUCATION
+          </h3>
 
-					<div
-						class="border-l border-white/10 pl-6 space-y-10 relative"
-					>
-						<!-- Seminar -->
-						<div class="relative">
-							<div
-								class="w-2.5 h-2.5 bg-white absolute -left-[31px] top-1.5 border border-black z-10 rounded-none"
-							>
-							</div>
-							<span
-								class="font-['JetBrains_Mono'] text-xs text-[#b3996b] tracking-wider block mb-1"
-								>2026</span
-							>
-							<h4
-								class="font-bold text-sm tracking-wide text-white uppercase font-['Inter']"
-							>
-								ACADEMIC SEMINAR
-							</h4>
-							<p
-								class="font-['JetBrains_Mono'] text-xs text-white/60 mt-2 leading-relaxed"
-							>
-								Presented research on "Personalized Intelligent Job Recommendation Based on Deep Learning in Elasticsearch Environment," summarizing complex methodologies and preparing technical defense notes.
-							</p>
-						</div>
+          <div class="border-l border-white/10 pl-6 space-y-10 relative">
+            <!-- Seminar -->
+            <div class="relative">
+              <div
+                class="w-2.5 h-2.5 bg-white absolute -left-[31px] top-1.5 border border-black z-10 rounded-none"
+              >
+              </div>
+              <span
+                class="font-['JetBrains_Mono'] text-xs text-[#b3996b] tracking-wider block mb-1"
+                >2026</span
+              >
+              <h4
+                class="font-bold text-sm tracking-wide text-white uppercase font-['Inter']"
+              >
+                ACADEMIC SEMINAR
+              </h4>
+              <p
+                class="font-['JetBrains_Mono'] text-xs text-white/60 mt-2 leading-relaxed"
+              >
+                Presented research on "Personalized Intelligent Job
+                Recommendation Based on Deep Learning in Elasticsearch
+                Environment," summarizing complex methodologies and preparing
+                technical defense notes.
+              </p>
+            </div>
 
-						<!-- Experience 1 -->
-						<div class="relative">
-							<div
-								class="w-2.5 h-2.5 bg-white absolute -left-[31px] top-1.5 border border-black z-10 rounded-none"
-							>
-							</div>
-							<span
-								class="font-['JetBrains_Mono'] text-xs text-[#b3996b] tracking-wider block mb-1"
-								>2022 — PRESENT</span
-							>
-							<h4
-								class="font-bold text-sm tracking-wide text-white uppercase font-['Inter']"
-							>
-								Full-Stack Developer & Systems Architect
-							</h4>
-							<p
-								class="font-['JetBrains_Mono'] text-xs text-white/60 mt-2 leading-relaxed"
-							>
-								Architecting custom web interfaces, Progressive
-								Web Apps, and database synchronizations.
-								Bridging modern frontend frameworks (React,
-								Astro) with complex backend state management,
-								strict database schemas (PostgreSQL, Firebase),
-								and seamless offline-first capabilities.
-							</p>
-						</div>
+            <!-- Experience 1 -->
+            <div class="relative">
+              <div
+                class="w-2.5 h-2.5 bg-white absolute -left-[31px] top-1.5 border border-black z-10 rounded-none"
+              >
+              </div>
+              <span
+                class="font-['JetBrains_Mono'] text-xs text-[#b3996b] tracking-wider block mb-1"
+                >2022 — PRESENT</span
+              >
+              <h4
+                class="font-bold text-sm tracking-wide text-white uppercase font-['Inter']"
+              >
+                Full-Stack Developer & Systems Architect
+              </h4>
+              <p
+                class="font-['JetBrains_Mono'] text-xs text-white/60 mt-2 leading-relaxed"
+              >
+                Architecting custom web interfaces, Progressive Web Apps, and
+                database synchronizations. Bridging modern frontend frameworks
+                (React, Astro) with complex backend state management, strict
+                database schemas (PostgreSQL, Firebase), and seamless
+                offline-first capabilities.
+              </p>
+            </div>
 
-						<!-- Experience 2 -->
-						<div class="relative">
-							<div
-								class="w-2.5 h-2.5 bg-white absolute -left-[31px] top-1.5 border border-black z-10 rounded-none"
-							>
-							</div>
-							<span
-								class="font-['JetBrains_Mono'] text-xs text-[#b3996b] tracking-wider block mb-1"
-								>2024 — PRESENT</span
-							>
-							<h4
-								class="font-bold text-sm tracking-wide text-white uppercase font-['Inter']"
-							>
-								Creative Technologist & Videographer
-							</h4>
-							<p
-								class="font-['JetBrains_Mono'] text-xs text-white/60 mt-2 leading-relaxed"
-							>
-								Applying an engineering mindset to digital
-								production. From shooting social impact
-								documentaries for NGOs to architecting 3D
-								environment layouts and configuring
-								high-fidelity 10-bit cinematic color grading
-								pipelines in DaVinci Resolve.
-							</p>
-						</div>
+            <!-- Experience 2 -->
+            <div class="relative">
+              <div
+                class="w-2.5 h-2.5 bg-white absolute -left-[31px] top-1.5 border border-black z-10 rounded-none"
+              >
+              </div>
+              <span
+                class="font-['JetBrains_Mono'] text-xs text-[#b3996b] tracking-wider block mb-1"
+                >2024 — PRESENT</span
+              >
+              <h4
+                class="font-bold text-sm tracking-wide text-white uppercase font-['Inter']"
+              >
+                Creative Technologist & Videographer
+              </h4>
+              <p
+                class="font-['JetBrains_Mono'] text-xs text-white/60 mt-2 leading-relaxed"
+              >
+                Applying an engineering mindset to digital production. From
+                shooting social impact documentaries for NGOs to architecting 3D
+                environment layouts and configuring high-fidelity 10-bit
+                cinematic color grading pipelines in DaVinci Resolve.
+              </p>
+            </div>
 
-						<!-- Education -->
-						<div class="relative">
-							<div
-								class="w-2.5 h-2.5 bg-white absolute -left-[31px] top-1.5 border border-black z-10 rounded-none"
-							>
-							</div>
-							<span
-								class="font-['JetBrains_Mono'] text-xs text-[#b3996b] tracking-wider block mb-1"
-								>2023 — PRESENT</span
-							>
-							<h4
-								class="font-bold text-sm tracking-wide text-white uppercase font-['Inter']"
-							>
-								B.Tech in Computer Science & Engineering
-							</h4>
-							<span
-								class="block text-xs font-['JetBrains_Mono'] text-white/40 mt-1 uppercase"
-								>APJ Abdul Kalam Technological University (KTU)</span
-							>
-							<p
-								class="font-['JetBrains_Mono'] text-xs text-white/60 mt-2 leading-relaxed"
-							>
-								Focus: Advanced Algorithms, System Design,
-								Relational Database Management (RDBMS), and
-								Object-Oriented Architecture.
-							</p>
-						</div>
-					</div>
-				</div>
+            <!-- Education -->
+            <div class="relative">
+              <div
+                class="w-2.5 h-2.5 bg-white absolute -left-[31px] top-1.5 border border-black z-10 rounded-none"
+              >
+              </div>
+              <span
+                class="font-['JetBrains_Mono'] text-xs text-[#b3996b] tracking-wider block mb-1"
+                >2023 — PRESENT</span
+              >
+              <h4
+                class="font-bold text-sm tracking-wide text-white uppercase font-['Inter']"
+              >
+                B.Tech in Computer Science & Engineering
+              </h4>
+              <span
+                class="block text-xs font-['JetBrains_Mono'] text-white/40 mt-1 uppercase"
+                >APJ Abdul Kalam Technological University (KTU)</span
+              >
+              <p
+                class="font-['JetBrains_Mono'] text-xs text-white/60 mt-2 leading-relaxed"
+              >
+                Focus: Advanced Algorithms, System Design, Relational Database
+                Management (RDBMS), and Object-Oriented Architecture.
+              </p>
+            </div>
+          </div>
+        </div>
 
-				<!-- Right Column: Certifications -->
-				<div>
-					<h3
-						class="font-['Bebas_Neue'] text-2xl md:text-3xl tracking-wider uppercase border-b border-white/10 pb-4 mb-8"
-					>
-						CERTIFICATIONS & TRAINING
-					</h3>
+        <!-- Right Column: Certifications -->
+        <div>
+          <h3
+            class="font-['Bebas_Neue'] text-2xl md:text-3xl tracking-wider uppercase border-b border-white/10 pb-4 mb-8"
+          >
+            CERTIFICATIONS & TRAINING
+          </h3>
 
-					<div
-						class="border-l border-white/10 pl-6 space-y-10 relative"
-					>
-						<!-- Cert 1 -->
-						<div class="relative">
-							<div
-								class="w-2.5 h-2.5 bg-white absolute -left-[31px] top-1.5 border border-black z-10 rounded-none"
-							>
-							</div>
-							<span
-								class="font-['JetBrains_Mono'] text-xs text-[#b3996b] tracking-wider block mb-1"
-								>JULY 2026</span
-							>
-							<h4
-								class="font-bold text-sm tracking-wide text-white uppercase font-['Inter']"
-							>
-								Machine Learning with Gen AI Internship
-							</h4>
-							<span
-								class="block text-xs font-['JetBrains_Mono'] text-white/40 mt-1 uppercase"
-								>ICT Academy of Kerala</span
-							>
-							<p
-								class="font-['JetBrains_Mono'] text-xs text-white/60 mt-2 leading-relaxed"
-							>
-								Completed an intensive one-month program
-								focusing on generative AI pipelines, model
-								training, and the practical engineering required
-								to deploy intelligent, functional systems.
-							</p>
-						</div>
+          <div class="border-l border-white/10 pl-6 space-y-10 relative">
+            <!-- Cert 1 -->
+            <div class="relative">
+              <div
+                class="w-2.5 h-2.5 bg-white absolute -left-[31px] top-1.5 border border-black z-10 rounded-none"
+              >
+              </div>
+              <span
+                class="font-['JetBrains_Mono'] text-xs text-[#b3996b] tracking-wider block mb-1"
+                >JULY 2026</span
+              >
+              <h4
+                class="font-bold text-sm tracking-wide text-white uppercase font-['Inter']"
+              >
+                Machine Learning with Gen AI Internship
+              </h4>
+              <span
+                class="block text-xs font-['JetBrains_Mono'] text-white/40 mt-1 uppercase"
+                >ICT Academy of Kerala</span
+              >
+              <p
+                class="font-['JetBrains_Mono'] text-xs text-white/60 mt-2 leading-relaxed"
+              >
+                Completed an intensive one-month program focusing on generative
+                AI pipelines, model training, and the practical engineering
+                required to deploy intelligent, functional systems.
+              </p>
+            </div>
 
-						<!-- Cert 2 -->
-						<div class="relative">
-							<div
-								class="w-2.5 h-2.5 bg-white absolute -left-[31px] top-1.5 border border-black z-10 rounded-none"
-							>
-							</div>
-							<span
-								class="font-['JetBrains_Mono'] text-xs text-[#b3996b] tracking-wider block mb-1"
-								>JUNE 2026</span
-							>
-							<h4
-								class="font-bold text-sm tracking-wide text-white uppercase font-['Inter']"
-							>
-								Software Engineer Intern Certification
-							</h4>
-							<span
-								class="block text-xs font-['JetBrains_Mono'] text-white/40 mt-1 uppercase"
-								>HackerRank</span
-							>
-							<p
-								class="font-['JetBrains_Mono'] text-xs text-white/60 mt-2 leading-relaxed"
-							>
-								Assessed and verified in core algorithmic logic,
-								efficient data structuring, and backend
-								problem-solving.
-							</p>
-						</div>
+            <!-- Cert 2 -->
+            <div class="relative">
+              <div
+                class="w-2.5 h-2.5 bg-white absolute -left-[31px] top-1.5 border border-black z-10 rounded-none"
+              >
+              </div>
+              <span
+                class="font-['JetBrains_Mono'] text-xs text-[#b3996b] tracking-wider block mb-1"
+                >JUNE 2026</span
+              >
+              <h4
+                class="font-bold text-sm tracking-wide text-white uppercase font-['Inter']"
+              >
+                Software Engineer Intern Certification
+              </h4>
+              <span
+                class="block text-xs font-['JetBrains_Mono'] text-white/40 mt-1 uppercase"
+                >HackerRank</span
+              >
+              <p
+                class="font-['JetBrains_Mono'] text-xs text-white/60 mt-2 leading-relaxed"
+              >
+                Assessed and verified in core algorithmic logic, efficient data
+                structuring, and backend problem-solving.
+              </p>
+            </div>
 
-						<!-- Cert 3 -->
-						<div class="relative">
-							<div
-								class="w-2.5 h-2.5 bg-white absolute -left-[31px] top-1.5 border border-black z-10 rounded-none"
-							>
-							</div>
-							<span
-								class="font-['JetBrains_Mono'] text-xs text-[#b3996b] tracking-wider block mb-1"
-								>JANUARY 2026</span
-							>
-							<h4
-								class="font-bold text-sm tracking-wide text-white uppercase font-['Inter']"
-							>
-								Build with Gemini 3 via AI Studio
-							</h4>
-							<span
-								class="block text-xs font-['JetBrains_Mono'] text-white/40 mt-1 uppercase"
-								>Google for Developers</span
-							>
-							<p
-								class="font-['JetBrains_Mono'] text-xs text-white/60 mt-2 leading-relaxed"
-							>
-								Hands-on architectural workshop focused on
-								integrating Gemini 3 and Antigravity models into
-								modern applications.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+            <!-- Cert 3 -->
+            <div class="relative">
+              <div
+                class="w-2.5 h-2.5 bg-white absolute -left-[31px] top-1.5 border border-black z-10 rounded-none"
+              >
+              </div>
+              <span
+                class="font-['JetBrains_Mono'] text-xs text-[#b3996b] tracking-wider block mb-1"
+                >JANUARY 2026</span
+              >
+              <h4
+                class="font-bold text-sm tracking-wide text-white uppercase font-['Inter']"
+              >
+                Build with Gemini 3 via AI Studio
+              </h4>
+              <span
+                class="block text-xs font-['JetBrains_Mono'] text-white/40 mt-1 uppercase"
+                >Google for Developers</span
+              >
+              <p
+                class="font-['JetBrains_Mono'] text-xs text-white/60 mt-2 leading-relaxed"
+              >
+                Hands-on architectural workshop focused on integrating Gemini 3
+                and Antigravity models into modern applications.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- Technical Note (Left Aligned) -->
-		<section
-			id="canvas-meta"
-			class="px-6 md:px-16 max-w-2xl my-12 md:my-20 scroll-mt-[5vh]"
-		>
-			<div class="bg-black/40 border-l border-[#b3996b]/30 p-4">
-				<h2
-					class="font-['JetBrains_Mono'] text-xs font-bold uppercase tracking-widest mb-3 text-white/90"
-				>
-					TECHNICAL NOTE // THE ARCHITECTURE
-				</h2>
-				<div
-					class="font-['JetBrains_Mono'] text-xs leading-relaxed space-y-3 text-white/60"
-				>
-					<p>
-						This portfolio is built using Astro, React, and Tailwind
-						CSS.
-					</p>
-					<p>
-						The background utilizes a custom IntersectionObserver to
-						trigger smooth, full-bleed color transitions as you
-						scroll, blending my love for structural, minimalist code
-						with high-end cinematic design.
-					</p>
-				</div>
-			</div>
-		</section>
+    <!-- Technical Note (Left Aligned) -->
+    <section
+      id="canvas-meta"
+      class="px-6 md:px-16 max-w-2xl my-12 md:my-20 scroll-mt-[5vh]"
+    >
+      <div class="bg-black/40 border-l border-[#b3996b]/30 p-4">
+        <h2
+          class="font-['JetBrains_Mono'] text-xs font-bold uppercase tracking-widest mb-3 text-white/90"
+        >
+          TECHNICAL NOTE // THE ARCHITECTURE
+        </h2>
+        <div
+          class="font-['JetBrains_Mono'] text-xs leading-relaxed space-y-3 text-white/60"
+        >
+          <p>This portfolio is built using Astro, React, and Tailwind CSS.</p>
+          <p>
+            The background utilizes a custom IntersectionObserver to trigger
+            smooth, full-bleed color transitions as you scroll, blending my love
+            for structural, minimalist code with high-end cinematic design.
+          </p>
+        </div>
+      </div>
+    </section>
 
-		<!-- About & Connect Section (Swiss Brutalist Grid) -->
-		<section
-			id="about"
-			class="px-6 md:px-16 max-w-6xl w-full mx-auto mt-16 md:mt-32 mb-16 md:mb-32 scroll-mt-[5vh]"
-		>
-			<div class="grid grid-cols-1 md:grid-cols-3 border border-white/10">
-				<!-- Grid Block 1: Profile Info -->
-				<div
-					class="p-8 border-b md:border-b-0 md:border-r border-white/10 font-['JetBrains_Mono']"
-				>
-					<h3
-						class="text-xs uppercase tracking-widest text-white/50 mb-6 font-['JetBrains_Mono']"
-					>
-						IDENTITY
-					</h3>
-					<div class="space-y-4 text-sm uppercase text-white">
-						<div>
-							<span class="block text-xs text-white/50">Name</span
-							>
-							<span class="font-bold">Abi Kurian Varghese</span>
-						</div>
-						<div>
-							<span class="block text-xs text-white/50"
-								>Status</span
-							>
-							<span class="font-bold text-[#b3996b]"
-								>Final Year Software Engineer (KTU)</span
-							>
-						</div>
-						<div>
-							<span class="block text-xs text-white/50"
-								>Focus</span
-							>
-							<span>Full-Stack & Intelligent Systems</span>
-						</div>
-					</div>
-				</div>
+    <!-- About & Connect Section (Swiss Brutalist Grid) -->
+    <section
+      id="about"
+      class="px-6 md:px-16 max-w-6xl w-full mx-auto mt-16 md:mt-32 mb-16 md:mb-32 scroll-mt-[5vh]"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-3 border border-white/10">
+        <!-- Grid Block 1: Profile Info -->
+        <div
+          class="p-8 border-b md:border-b-0 md:border-r border-white/10 font-['JetBrains_Mono']"
+        >
+          <h3
+            class="text-xs uppercase tracking-widest text-white/50 mb-6 font-['JetBrains_Mono']"
+          >
+            IDENTITY
+          </h3>
+          <div class="space-y-4 text-sm uppercase text-white">
+            <div>
+              <span class="block text-xs text-white/50">Name</span>
+              <span class="font-bold">Abi Kurian Varghese</span>
+            </div>
+            <div>
+              <span class="block text-xs text-white/50">Status</span>
+              <span class="font-bold text-[#b3996b]"
+                >Final Year Software Engineer (KTU)</span
+              >
+            </div>
+            <div>
+              <span class="block text-xs text-white/50">Focus</span>
+              <span>Full-Stack & Intelligent Systems</span>
+            </div>
+          </div>
+        </div>
 
-				<!-- Grid Block 2: Synopsis -->
-				<div
-					class="p-8 border-b md:border-b-0 md:border-r border-white/10 font-['Inter'] md:col-span-2"
-				>
-					<h3
-						class="text-xs uppercase tracking-widest text-white/50 mb-6 font-['JetBrains_Mono']"
-					>
-						SYNOPSIS
-					</h3>
-					<div
-						class="text-base md:text-lg leading-relaxed text-white font-light uppercase tracking-wide"
-					>
-						<p>
-							I care about how things work under the hood just as
-							much as how they look on the screen.
-						</p>
-						<p class="mt-4">
-							I am a Computer Science engineering student who
-							builds robust, scalable applications. Whether I'm
-							architecting a strict PostgreSQL schema with Row
-							Level Security, optimizing React race conditions,
-							tinkering with local LLMs on my GPU, or
-							color-grading cinematic footage, my goal is always
-							the same: build systems that are fast, secure, and
-							visually striking.
-						</p>
-					</div>
-				</div>
-			</div>
+        <!-- Grid Block 2: Synopsis -->
+        <div
+          class="p-8 border-b md:border-b-0 md:border-r border-white/10 font-['Inter'] md:col-span-2"
+        >
+          <h3
+            class="text-xs uppercase tracking-widest text-white/50 mb-6 font-['JetBrains_Mono']"
+          >
+            SYNOPSIS
+          </h3>
+          <div
+            class="text-base md:text-lg leading-relaxed text-white font-light uppercase tracking-wide"
+          >
+            <p>
+              I care about how things work under the hood just as much as how
+              they look on the screen.
+            </p>
+            <p class="mt-4">
+              I am a Computer Science engineering student who builds robust,
+              scalable applications. Whether I'm architecting a strict
+              PostgreSQL schema with Row Level Security, optimizing React race
+              conditions, tinkering with local LLMs on my GPU, or color-grading
+              cinematic footage, my goal is always the same: build systems that
+              are fast, secure, and visually striking.
+            </p>
+          </div>
+        </div>
+      </div>
 
-			<!-- Connect Links (Swiss Brutalist Inversion Row) -->
-			<div
-				class="grid grid-cols-2 md:grid-cols-4 border-l border-r border-b border-white/10 font-['Bebas_Neue'] text-2xl md:text-3xl tracking-wider text-center"
-			>
-				<a
-					href="https://www.instagram.com/abii.aep/"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="block py-4 border-r border-white/10 hover:bg-white hover:text-black transition-none"
-					>INSTAGRAM</a
-				>
-				<a
-					href="https://github.com/abikurian/portfolio"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="block py-4 border-r border-white/10 hover:bg-white hover:text-black transition-none"
-					>GITHUB</a
-				>
-				<a
-					href="https://www.linkedin.com/in/abi-kurian-varghese/"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="block py-4 md:border-r border-white/10 hover:bg-white hover:text-black transition-none"
-					>LINKEDIN</a
-				>
-				<a
-					href="mailto:abikurianvarghese@gmail.com"
-					class="block py-4 hover:bg-white hover:text-black transition-none"
-					>EMAIL</a
-				>
-			</div>
-		</section>
+      <!-- Connect Links (Swiss Brutalist Inversion Row) -->
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 border-l border-r border-b border-white/10 font-['Bebas_Neue'] text-2xl md:text-3xl tracking-wider text-center"
+      >
+        <a
+          href="https://www.instagram.com/abii.aep/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="block py-4 border-r border-white/10 hover:bg-white hover:text-black transition-none"
+          >INSTAGRAM</a
+        >
+        <a
+          href="https://github.com/abikurian/portfolio"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="block py-4 border-r border-white/10 hover:bg-white hover:text-black transition-none"
+          >GITHUB</a
+        >
+        <a
+          href="https://www.linkedin.com/in/abi-kurian-varghese/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="block py-4 md:border-r border-white/10 hover:bg-white hover:text-black transition-none"
+          >LINKEDIN</a
+        >
+        <a
+          href="mailto:abikurianvarghese@gmail.com"
+          class="block py-4 hover:bg-white hover:text-black transition-none"
+          >EMAIL</a
+        >
+      </div>
+    </section>
 
-		<!-- The Skills Board (Swiss Brutalist Grid) -->
-		<section
-			class="max-w-[1400px] w-full mx-auto px-6 md:px-16 mt-16 md:mt-32 mb-[20vh] scroll-mt-[5vh]"
-		>
-			<div class="mb-12 border-l-2 border-[#b3996b]/30 pl-6">
-				<h2
-					class="font-['Bebas_Neue'] text-4xl md:text-7xl leading-none tracking-tight uppercase"
-				>
-					SYSTEM CAPABILITIES
-				</h2>
-			</div>
+    <!-- The Skills Board (Swiss Brutalist Grid) -->
+    <section
+      class="max-w-[1400px] w-full mx-auto px-6 md:px-16 mt-16 md:mt-32 mb-[20vh] scroll-mt-[5vh]"
+    >
+      <div class="mb-12 border-l-2 border-[#b3996b]/30 pl-6">
+        <h2
+          class="font-['Bebas_Neue'] text-4xl md:text-7xl leading-none tracking-tight uppercase"
+        >
+          SYSTEM CAPABILITIES
+        </h2>
+      </div>
 
-			<div
-				class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-l border-white/10 font-['Inter'] uppercase"
-			>
-				<!-- Category 1 -->
-				<div
-					class="p-8 md:p-10 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group"
-				>
-					<h3
-						class="text-xs tracking-[0.3em] font-semibold mb-8 text-[#b3996b] border-b border-white/10 pb-4 inline-block group-hover:text-black/60 transition-none font-['JetBrains_Mono']"
-					>
-						LANGUAGES & CORE
-					</h3>
-					<ul
-						class="space-y-4 text-sm md:text-base font-medium tracking-widest text-white group-hover:text-black transition-none"
-					>
-						<li>JavaScript / TypeScript</li>
-						<li>Dart</li>
-						<li>Python</li>
-						<li>C</li>
-						<li>SQL</li>
-					</ul>
-				</div>
-				<!-- Category 2 -->
-				<div
-					class="p-8 md:p-10 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group"
-				>
-					<h3
-						class="text-xs tracking-[0.3em] font-semibold mb-8 text-[#b3996b] border-b border-white/10 pb-4 inline-block group-hover:text-black/60 transition-none font-['JetBrains_Mono']"
-					>
-						FRONTEND ARCHITECTURE
-					</h3>
-					<ul
-						class="space-y-4 text-sm md:text-base font-medium tracking-widest text-white group-hover:text-black transition-none"
-					>
-						<li>React</li>
-						<li>Astro</li>
-						<li>Vite</li>
-						<li>Tailwind CSS</li>
-						<li>Framer Motion</li>
-					</ul>
-				</div>
-				<!-- Category 3 -->
-				<div
-					class="p-8 md:p-10 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group"
-				>
-					<h3
-						class="text-xs tracking-[0.3em] font-semibold mb-8 text-[#b3996b] border-b border-white/10 pb-4 inline-block group-hover:text-black/60 transition-none font-['JetBrains_Mono']"
-					>
-						BACKEND, CLOUD & AI
-					</h3>
-					<ul
-						class="space-y-4 text-sm md:text-base font-medium tracking-widest text-white group-hover:text-black transition-none"
-					>
-						<li>Supabase (PostgreSQL)</li>
-						<li>Firebase</li>
-						<li>Dexie.js (IndexedDB)</li>
-						<li>GenAI Pipelines</li>
-						<li>Ollama / LLMs</li>
-					</ul>
-				</div>
-				<!-- Category 4 -->
-				<div
-					class="p-8 md:p-10 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group"
-				>
-					<h3
-						class="text-xs tracking-[0.3em] font-semibold mb-8 text-[#b3996b] border-b border-white/10 pb-4 inline-block group-hover:text-black/60 transition-none font-['JetBrains_Mono']"
-					>
-						CREATIVE INFRASTRUCTURE
-					</h3>
-					<ul
-						class="space-y-4 text-sm md:text-base font-medium tracking-widest text-white group-hover:text-black transition-none"
-					>
-						<li>Blender</li>
-						<li>DaVinci Resolve</li>
-						<li>Premiere Pro</li>
-						<li>Figma</li>
-					</ul>
-				</div>
-			</div>
-		</section>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-l border-white/10 font-['Inter'] uppercase"
+      >
+        <!-- Category 1 -->
+        <div
+          class="p-8 md:p-10 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group"
+        >
+          <h3
+            class="text-xs tracking-[0.3em] font-semibold mb-8 text-[#b3996b] border-b border-white/10 pb-4 inline-block group-hover:text-black/60 transition-none font-['JetBrains_Mono']"
+          >
+            LANGUAGES & CORE
+          </h3>
+          <ul
+            class="space-y-4 text-sm md:text-base font-medium tracking-widest text-white group-hover:text-black transition-none"
+          >
+            <li>JavaScript / TypeScript</li>
+            <li>Dart</li>
+            <li>Python</li>
+            <li>C</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <!-- Category 2 -->
+        <div
+          class="p-8 md:p-10 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group"
+        >
+          <h3
+            class="text-xs tracking-[0.3em] font-semibold mb-8 text-[#b3996b] border-b border-white/10 pb-4 inline-block group-hover:text-black/60 transition-none font-['JetBrains_Mono']"
+          >
+            FRONTEND ARCHITECTURE
+          </h3>
+          <ul
+            class="space-y-4 text-sm md:text-base font-medium tracking-widest text-white group-hover:text-black transition-none"
+          >
+            <li>React</li>
+            <li>Astro</li>
+            <li>Vite</li>
+            <li>Tailwind CSS</li>
+            <li>Framer Motion</li>
+          </ul>
+        </div>
+        <!-- Category 3 -->
+        <div
+          class="p-8 md:p-10 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group"
+        >
+          <h3
+            class="text-xs tracking-[0.3em] font-semibold mb-8 text-[#b3996b] border-b border-white/10 pb-4 inline-block group-hover:text-black/60 transition-none font-['JetBrains_Mono']"
+          >
+            BACKEND, CLOUD & AI
+          </h3>
+          <ul
+            class="space-y-4 text-sm md:text-base font-medium tracking-widest text-white group-hover:text-black transition-none"
+          >
+            <li>Supabase (PostgreSQL)</li>
+            <li>Firebase</li>
+            <li>Dexie.js (IndexedDB)</li>
+            <li>GenAI Pipelines</li>
+            <li>Ollama / LLMs</li>
+          </ul>
+        </div>
+        <!-- Category 4 -->
+        <div
+          class="p-8 md:p-10 border-r border-b border-white/10 hover:bg-white hover:text-black transition-none group"
+        >
+          <h3
+            class="text-xs tracking-[0.3em] font-semibold mb-8 text-[#b3996b] border-b border-white/10 pb-4 inline-block group-hover:text-black/60 transition-none font-['JetBrains_Mono']"
+          >
+            CREATIVE INFRASTRUCTURE
+          </h3>
+          <ul
+            class="space-y-4 text-sm md:text-base font-medium tracking-widest text-white group-hover:text-black transition-none"
+          >
+            <li>Blender</li>
+            <li>DaVinci Resolve</li>
+            <li>Premiere Pro</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-		<!-- CONTACT HUB -->
-		<section
-			id="contact"
-			class="max-w-[1400px] w-full mx-auto px-6 md:px-16 mt-16 md:mt-32 mb-[15vh] scroll-mt-[5vh]"
-		>
-			<div class="mb-12 border-l-2 border-[#b3996b]/30 pl-6">
-				<h2
-					class="font-['Bebas_Neue'] text-4xl md:text-7xl leading-none tracking-tight uppercase"
-				>
-					CONTACT HUB
-				</h2>
-			</div>
+    <!-- CONTACT HUB -->
+    <section
+      id="contact"
+      class="max-w-[1400px] w-full mx-auto px-6 md:px-16 mt-16 md:mt-32 mb-[15vh] scroll-mt-[5vh]"
+    >
+      <div class="mb-12 border-l-2 border-[#b3996b]/30 pl-6">
+        <h2
+          class="font-['Bebas_Neue'] text-4xl md:text-7xl leading-none tracking-tight uppercase"
+        >
+          CONTACT HUB
+        </h2>
+      </div>
 
-			<div
-				class="grid grid-cols-1 md:grid-cols-2 gap-0 border border-white/10"
-			>
-				<!-- Left Column: Form -->
-				<form
-					class="p-8 md:p-12 border-b md:border-b-0 md:border-r border-white/10 space-y-8 font-['JetBrains_Mono'] text-xs"
-					onsubmit="event.preventDefault(); alert('CONNECTION INITIALIZED // TRANSMITTING DATA...');"
-				>
-					<div class="space-y-2">
-						<label
-							class="block text-white/50 uppercase tracking-widest"
-							>IDENTIFIER (NAME)</label
-						>
-						<input
-							type="text"
-							required
-							class="bg-transparent border-b border-white/20 focus:border-white focus:outline-none p-2 w-full text-white text-sm uppercase rounded-none transition-none"
-							placeholder="ENTER NAME..."
-						/>
-					</div>
-					<div class="space-y-2">
-						<label
-							class="block text-white/50 uppercase tracking-widest"
-							>NET ADDRESS (EMAIL)</label
-						>
-						<input
-							type="email"
-							required
-							class="bg-transparent border-b border-white/20 focus:border-white focus:outline-none p-2 w-full text-white text-sm rounded-none transition-none"
-							placeholder="ENTER EMAIL..."
-						/>
-					</div>
-					<div class="space-y-2">
-						<label
-							class="block text-white/50 uppercase tracking-widest"
-							>PAYLOAD (MESSAGE)</label
-						>
-						<textarea
-							rows="4"
-							required
-							class="bg-transparent border-b border-white/20 focus:border-white focus:outline-none p-2 w-full text-white text-sm uppercase rounded-none transition-none resize-none"
-							placeholder="ENTER MESSAGE..."></textarea>
-					</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-0 border border-white/10">
+        <!-- Left Column: Form -->
+        <form
+          class="p-8 md:p-12 border-b md:border-b-0 md:border-r border-white/10 space-y-8 font-['JetBrains_Mono'] text-xs"
+          onsubmit="event.preventDefault(); alert('CONNECTION INITIALIZED // TRANSMITTING DATA...');"
+        >
+          <div class="space-y-2">
+            <label class="block text-white/50 uppercase tracking-widest"
+              >IDENTIFIER (NAME)</label
+            >
+            <input
+              type="text"
+              required
+              class="bg-transparent border-b border-white/20 focus:border-white focus:outline-none p-2 w-full text-white text-sm uppercase rounded-none transition-none"
+              placeholder="ENTER NAME..."
+            />
+          </div>
+          <div class="space-y-2">
+            <label class="block text-white/50 uppercase tracking-widest"
+              >NET ADDRESS (EMAIL)</label
+            >
+            <input
+              type="email"
+              required
+              class="bg-transparent border-b border-white/20 focus:border-white focus:outline-none p-2 w-full text-white text-sm rounded-none transition-none"
+              placeholder="ENTER EMAIL..."
+            />
+          </div>
+          <div class="space-y-2">
+            <label class="block text-white/50 uppercase tracking-widest"
+              >PAYLOAD (MESSAGE)</label
+            >
+            <textarea
+              rows="4"
+              required
+              class="bg-transparent border-b border-white/20 focus:border-white focus:outline-none p-2 w-full text-white text-sm uppercase rounded-none transition-none resize-none"
+              placeholder="ENTER MESSAGE..."></textarea>
+          </div>
 
-					<button
-						type="submit"
-						class="w-full bg-black text-white border border-white/20 py-4 font-['Bebas_Neue'] text-xl tracking-widest hover:bg-white hover:text-black hover:border-white transition-none cursor-pointer rounded-none"
-					>
-						INITIALIZE CONNECTION
-					</button>
-				</form>
+          <button
+            type="submit"
+            class="w-full bg-black text-white border border-white/20 py-4 font-['Bebas_Neue'] text-xl tracking-widest hover:bg-white hover:text-black hover:border-white transition-none cursor-pointer rounded-none"
+          >
+            INITIALIZE CONNECTION
+          </button>
+        </form>
 
-				<!-- Right Column: Metadata & Links -->
-				<div
-					class="p-8 md:p-12 flex flex-col justify-between font-['JetBrains_Mono'] text-xs text-white/80 space-y-12"
-				>
-					<div>
-						<h3
-							class="text-white/50 uppercase tracking-widest mb-6 font-['JetBrains_Mono']"
-						>
-							METADATA
-						</h3>
-						<div
-							class="space-y-4 uppercase font-['JetBrains_Mono']"
-						>
-							<div>
-								<span class="block text-white/40">LOCATION</span
-								>
-								<span class="text-sm font-bold text-white"
-									>KOCHI, KERALA, IN // 9.9312° N, 76.2673° E</span
-								>
-							</div>
-							<div>
-								<span class="block text-white/40">TIMEZONE</span
-								>
-								<span class="text-sm font-bold text-white"
-									>IST // UTC+5:30</span
-								>
-							</div>
-						</div>
-					</div>
+        <!-- Right Column: Metadata & Links -->
+        <div
+          class="p-8 md:p-12 flex flex-col justify-between font-['JetBrains_Mono'] text-xs text-white/80 space-y-12"
+        >
+          <div>
+            <h3
+              class="text-white/50 uppercase tracking-widest mb-6 font-['JetBrains_Mono']"
+            >
+              METADATA
+            </h3>
+            <div class="space-y-4 uppercase font-['JetBrains_Mono']">
+              <div>
+                <span class="block text-white/40">LOCATION</span>
+                <span class="text-sm font-bold text-white"
+                  >KOCHI, KERALA, IN // 9.9312° N, 76.2673° E</span
+                >
+              </div>
+              <div>
+                <span class="block text-white/40">TIMEZONE</span>
+                <span class="text-sm font-bold text-white">IST // UTC+5:30</span
+                >
+              </div>
+            </div>
+          </div>
 
-					<div
-						class="pt-8 border-t border-white/10 font-['JetBrains_Mono']"
-					>
-						<h3
-							class="text-white/50 uppercase tracking-widest mb-6 font-['JetBrains_Mono']"
-						>
-							RAW LINKS
-						</h3>
-						<div
-							class="grid grid-cols-2 gap-4 text-sm font-bold font-['Bebas_Neue'] tracking-wider"
-						>
-							<a
-								href="https://github.com/abikurian/portfolio"
-								target="_blank"
-								rel="noopener noreferrer"
-								class="block border border-white/10 py-3 text-center hover:bg-white hover:text-black hover:border-white transition-none"
-								>GITHUB</a
-							>
-							<a
-								href="https://www.linkedin.com/in/abi-kurian-varghese/"
-								target="_blank"
-								rel="noopener noreferrer"
-								class="block border border-white/10 py-3 text-center hover:bg-white hover:text-black hover:border-white transition-none"
-								>LINKEDIN</a
-							>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
+          <div class="pt-8 border-t border-white/10 font-['JetBrains_Mono']">
+            <h3
+              class="text-white/50 uppercase tracking-widest mb-6 font-['JetBrains_Mono']"
+            >
+              RAW LINKS
+            </h3>
+            <div
+              class="grid grid-cols-2 gap-4 text-sm font-bold font-['Bebas_Neue'] tracking-wider"
+            >
+              <a
+                href="https://github.com/abikurian/portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block border border-white/10 py-3 text-center hover:bg-white hover:text-black hover:border-white transition-none"
+                >GITHUB</a
+              >
+              <a
+                href="https://www.linkedin.com/in/abi-kurian-varghese/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block border border-white/10 py-3 text-center hover:bg-white hover:text-black hover:border-white transition-none"
+                >LINKEDIN</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>
 
 <script>
-	document.addEventListener("DOMContentLoaded", () => {
-		// Category filters
-		const filterButtons = document.querySelectorAll<HTMLElement>("[data-filter]");
-		const projectCells = document.querySelectorAll<HTMLElement>("[data-category]");
+  document.addEventListener("DOMContentLoaded", () => {
+    // Category filters
+    const filterButtons =
+      document.querySelectorAll<HTMLElement>("[data-filter]");
+    const projectCells =
+      document.querySelectorAll<HTMLElement>("[data-category]");
 
-		filterButtons.forEach((btn) => {
-			btn.addEventListener("click", () => {
-				// Update button styles
-				filterButtons.forEach((b) => {
-					b.classList.remove(
-						"bg-white",
-						"text-black",
-						"border-white",
-					);
-					b.classList.add("border-white/20", "text-white");
-				});
-				btn.classList.add("bg-white", "text-black", "border-white");
-				btn.classList.remove("border-white/20", "text-white");
+    filterButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        // Update button styles
+        filterButtons.forEach((b) => {
+          b.classList.remove("bg-white", "text-black", "border-white");
+          b.classList.add("border-white/20", "text-white");
+        });
+        btn.classList.add("bg-white", "text-black", "border-white");
+        btn.classList.remove("border-white/20", "text-white");
 
-				const filterValue = btn.getAttribute("data-filter");
-				if (!filterValue) return;
+        const filterValue = btn.getAttribute("data-filter");
+        if (!filterValue) return;
 
-				projectCells.forEach((cell) => {
-					const categoryAttr = cell.getAttribute("data-category");
-					if (!categoryAttr) return;
-					const categories = categoryAttr.split(" ");
-					if (
-						filterValue === "all" ||
-						categories.includes(filterValue)
-					) {
-						cell.style.display = "flex";
-					} else {
-						cell.style.display = "none";
-					}
-				});
-			});
-		});
+        projectCells.forEach((cell) => {
+          const categoryAttr = cell.getAttribute("data-category");
+          if (!categoryAttr) return;
+          const categories = categoryAttr.split(" ");
+          if (filterValue === "all" || categories.includes(filterValue)) {
+            cell.style.display = "flex";
+          } else {
+            cell.style.display = "none";
+          }
+        });
+      });
+    });
 
-		// Dynamic Scroll Backdrop Overlay
-		const overlay = document.getElementById("scroll-overlay");
-		const handleScroll = () => {
-			if (!overlay) return;
-			const scrollTop =
-				window.scrollY || document.documentElement.scrollTop;
-			const fadeStart = 100; // start fading after 100px scroll
-			const fadeEnd = window.innerHeight * 0.8; // fully solid before first screen ends
+    // Dynamic Scroll Backdrop Overlay
+    const overlay = document.getElementById("scroll-overlay");
+    const handleScroll = () => {
+      if (!overlay) return;
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const fadeStart = 100; // start fading after 100px scroll
+      const fadeEnd = window.innerHeight * 0.8; // fully solid before first screen ends
 
-			if (scrollTop <= fadeStart) {
-				overlay.style.opacity = "0";
-			} else if (scrollTop >= fadeEnd) {
-				overlay.style.opacity = "1";
-			} else {
-				const progress =
-					(scrollTop - fadeStart) / (fadeEnd - fadeStart);
-				overlay.style.opacity = progress.toString();
-			}
-		};
+      if (scrollTop <= fadeStart) {
+        overlay.style.opacity = "0";
+      } else if (scrollTop >= fadeEnd) {
+        overlay.style.opacity = "1";
+      } else {
+        const progress = (scrollTop - fadeStart) / (fadeEnd - fadeStart);
+        overlay.style.opacity = progress.toString();
+      }
+    };
 
-		window.addEventListener("scroll", handleScroll, { passive: true });
-		handleScroll(); // Initial run
-	});
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll(); // Initial run
+  });
 </script>
 
 <style>
-	html {
-		scroll-behavior: smooth;
-		background: black;
-	}
+  html {
+    scroll-behavior: smooth;
+    background: black;
+  }
 </style>
